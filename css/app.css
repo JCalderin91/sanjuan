@@ -75,7 +75,7 @@ body {
     left: 0%;
     width: 100%;
     height: 3px;
-    background-color: orange;
+    background-color: var(--naranja);
 
 }
 #nav ul li a:hover{
@@ -90,28 +90,13 @@ body {
     width: 100vw;
     background-color: #999;
     overflow: hidden;
-}
-#header video{
-    position: absolute;
-    width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
-#header .cont-header{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 500px;
-}
 #header img{
-	position: relative;
+	position: absolute;
 	width: 100%;
-}
-#header .cont-subtitulo p{
-	text-align: center;
-	color: #fff;
-	text-shadow: 2px 2px 3px rgba(0,0,0,.4);
-	font-size: 2rem;
 }
 
 #formPasajes input[type="text"]{
@@ -131,15 +116,11 @@ body {
 }
 
 #formPasajes{
-    width: 320px;
+    width: 100%;
     /*background: #eaedf2;
     background-image: radial-gradient(ellipse at center, #f8f9fa 0%, #eaedf2 100%);*/
     background-color: rgba(255,255,255,.8);
     padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%,-50%);
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.699);
     text-transform: uppercase;
 }
@@ -149,6 +130,7 @@ body {
 }
 #formPasajes h4{
     text-align: center;
+    font-size: 1.35rem;
 }
 #formPasajes h6{
     margin-top: 5px;
@@ -168,9 +150,10 @@ body {
     width: 100%;
     border-radius: 0;
 
-    background-color: rgb(255,165,0);
+    background-color: var(--naranja);
     color: #fff !important;
     transition: all .5s ease;
+    text-shadow: none;
 }
 #btnPasajes:hover{
     background-color: rgb(235,145,0);
@@ -260,8 +243,15 @@ body {
     position: relative;
     transition: all .5s ease;
 }
+#footer p{
+    color: #fff;
+    font-family: 1.5rem;
+    margin-bottom: 0;
+}
+
 
 #footer i {
+    color: var(--naranja);
     font-size: 2rem;
     padding: 0 5px;
 }
@@ -323,18 +313,21 @@ body {
 }
 
 #footer .contacto {
-    text-shadow: 2px 2px 2px #000;
+    color: var(--naranja);
+    text-shadow: 2px 2px 2px var(--color);
 }
 #footer  h2{
 	text-align: center;
-    color: rgb(255, 165, 0);
-    text-shadow: 1px 1px 3px #000;
+    color: var(--naranja)
+    text-shadow: 1px 1px 3px #fff;
     font-weight: bold;
     padding: 20px;
 
 }
 
 #footer .contacto h3 {
+    font-weight: bold;
+    font-size: 2rem;
     text-shadow: 1px 1px 3px #000;
 }
 
@@ -342,7 +335,7 @@ body {
     background-color: #ff702e !important;
     font-weight: bold;
     color: #603e00;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 5px rgba(255, 255, 255, .2);
 }
 
 #footer #form a {
@@ -355,7 +348,7 @@ body {
 }
 
 a {
-    color: #ff702e !important;
+    color: var(--naranja) !important;
 }
 
 #copy {
@@ -395,18 +388,19 @@ i.fa-chess{
 }
 
 *::-moz-selection {
-    background-color: #ff702e;
+    background-color: var(--naranja)
     color: black;
 }
 
 #footer {
-    background-image: url(https://i.ytimg.com/vi/dGiUO62LG1g/maxresdefault.jpg);
+    /*background-image: url(https://i.ytimg.com/vi/dGiUO62LG1g/maxresdefault.jpg);
     background-repeat: no-repeat;
-    /* Indicamos que no se repetira */
+     Indicamos que no se repetira */
     background-size: cover;
     /* Encajamos la imagen al 100% del ancho */
     background-attachment: fixed;
     /* Establecemos una posicion fija para la imagen */
+    background-color: #444;
 }
 #footer .fab{
 	color: #fff;
@@ -477,18 +471,20 @@ p {
 	bottom: 20px;
 	right: 20px;
 	font-size: 2.5rem;
-	color: #00993e;
+	color: var(--naranja);
+}
+#btn-arriba i{
+    color: var(--naranja);
 }
 
 #carousel img{
-
 	width: 100%;
 }
 /******************************/
 
 @media (max-width: 576px){
     #navbar i{
-        color: orange;
+        color: var(--naranja)
     }
 	#header .cont-header{
 		width: 100vw;
