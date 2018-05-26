@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <title>SanJuan</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body>
+
+   <div id="nav" class="container-fluid">
+      <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrollOn">
+         <div class="container">
+
+            <!-- Brand -->
+            <img class="logo" src="img/logo-sin-fondo.png">
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+               <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a data-ancla="empresa" class="ancla nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="servicios" class="ancla nav-link" href="#">Flota</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="clientes" class="ancla nav-link" href="#">Viajes especiales</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="blog" class="ancla nav-link" href="#">Encomiendas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="footer" class="ancla nav-link" href="#">Club recorrido</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="footer" class="ancla nav-link" href="#">Vip</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="footer" class="ancla nav-link" href="#">Medio pago</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="footer" class="ancla nav-link" href="#">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-ancla="footer" class="ancla nav-link" href="#">Contacto</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+
+   <header id="header">
+
+         <!--
+      <video loop=”loop” autoplay>
+         <source src="video/video.mp4" type="video/mp4">
+      </video>
+          -->
+      <img src="img/_DSC0007-01.jpeg" alt="">
+
+            <form action="" id="formPasajes">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <h4>Buscá tu pasaje</h4>
+                  </div>
+
+                  <div class="col-sm-12">
+                     <h6>Origen</h6>
+                     <input type="text" placeholder="De donde viene?">
+                     <h6>Destino</h6>
+                     <input type="text" placeholder="Hacia donde va?">
+                  </div>
+
+                  <div class="col-sm-12 tipo">
+                     <h6><input type="radio"> Ida</h6>
+                     <h6><input type="radio"> Ida y vuelta</h6>
+                  </div>
+
+                  <div class="col-sm-6">
+                     <h6>Salida</h6>
+                  </div>
+                  <div class="col-sm-6">
+                     <h6>Regreso</h6>
+                  </div>
+
+                  <div class="col-sm-6">
+                     <input type="text" readonly=""><i class="far fa-calendar"></i>
+                  </div>
+                  <div class="col-sm-6">
+                     <input type="text" readonly=""><i class="far fa-calendar"></i>
+                  </div>
+
+                  <div class="col-sm-6 offset-sm-3">
+                     <a href="#" class="btn" id="btnPasajes">Buscar</a>
+                  </div>
+               </div>
+            </form>
+
+      
+
+   </header>
+
+   <div id="btn-mas">
+      <a class="ancla" data-ancla="empresa" href="#">
+         <i class="fas fa-arrow-alt-circle-down "></i>
+      </a>
+   </div>
+
+   <br>
+
+   <br>
+   <div id="empresa" class="container">
+      <h2>Nuestra empresa</h2>
+      <div class="empresa">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+            ipsum asperiores perfer adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum
+            asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus quibusdam.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+            ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus
+            quibusdam.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+            ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus
+            quibusdam.</p>
+      </div>
+   </div>
+   <br>
+   <div id="servicios">
+      <div class="container-fluid subtitulo">
+         <h2>Ofrecemos diversos servicios</h2>
+      </div>
+      <br>
+
+      <div class="container">
+
+         <div class="row">
+            <div class="col-sm-6">
+               <i class="fas fa-chart-line"></i>
+               <h3>Reliability</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
+                  optio beatae quidem?</p>
+            </div>
+            <div class="col-sm-6">
+               <i class="fas fa-trophy"></i>
+               <h3>Expertise</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
+                  optio beatae quidem?</p>
+            </div>
+            <div class="col-sm-6">
+               <i id="star" class="fas fa-star"></i>
+               <h3>Quality</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
+                  optio beatae quidem?</p>
+            </div>
+            <div class="col-sm-6">
+               <i id="star" class="fas fa-chess"></i>
+               <h3>Royality</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
+                  optio beatae quidem?</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br>
+   <div id="clientes">
+
+      <div class="container-fluid subtitulo">
+         <h2>Nuestros clientes</h2>
+      </div>
+      <br>
+      <div class="container">
+
+         <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+               <li data-target="#demo" data-slide-to="0" class="active"></li>
+               <li data-target="#demo" data-slide-to="1"></li>
+               <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div id="carousel" class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h2>Cliente 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                           unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
+                           ratione.</p>
+                     </div>
+                     <div class="col-lg-6">
+                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h2>Cliente 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                           unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
+                           ratione.</p>
+                     </div>
+                     <div class="col-lg-6">
+                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h2>Cliente 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                           unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
+                           ratione.</p>
+                     </div>
+                     <div class="col-lg-6">
+                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+            </a>
+
+         </div>
+      </div>
+   </div>
+   <br>
+
+
+   <br>
+   <footer id="footer">
+      <h2>Para mayor información</h2>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div class="contacto col-sm-6">
+               <h3>Ponte en contacto</h3>
+               <h5>
+                  <i class="fas fa-map-marker-alt"></i>Busca nustras oficinas en</h5>
+               <p>Bld Mihail Kogalniceanu, nr. 8,7652 </p>
+               <p>Bucharest, Romania</p>
+               <h5>
+                  <i class="fas fa-phone "></i>Puedes llamarnos</h5>
+               <p>+40 762 321 762</p>
+               <p>Mon - Fri, 8:00-22:00</p>
+               <h5>Redes sociales</h5>
+               <a href="#">
+                  <i class="fab fa-facebook"></i>
+               </a>
+               <a href="#">
+                  <i class="fab fa-twitter-square"></i>
+               </a>
+               <a href="#">
+                  <i class="fab fa-instagram"></i>
+               </a>
+               <a href="#">
+                  <i class="fab fa-whatsapp-square  "></i>
+               </a>
+            </div>
+            <div class="col-sm-6">
+               <form action="" id="form" method="POST">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <h4>Dinos lo que necesitas</h4>
+                     </div>
+                     <div class="col-lg-6">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                     </div>
+                     <div class="col-lg-6">
+                        <input type="text" name="correo" placeholder="Correo">
+                     </div>
+                     <div class="col-lg-12">
+                        <input type="text" name="asunto" placeholder="Asunto">
+                     </div>
+                     <div class="col-lg-12">
+                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                     </div>
+                     <div class="col-lg-12">
+                        <button class="btn" type="submit">ENVIAR MENSAJE
+                           <i class="fas fa-location-arrow"></i>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div id="copy">
+      <div class="row">
+         <div class="col-12 col-sm-6">
+            <p>
+               <a href="#">Fishingred &copy; 2018</a>
+            </p>
+         </div>
+         <div class="col-12 col-sm-6">
+            <p>Todos los derechos reservados. </p>
+         </div>
+      </div>
+   </div>
+
+   <div id="btn-arriba">
+      <a href="#">
+         <i class="fas fa-arrow-circle-up"></i>
+      </a>
+   </div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
