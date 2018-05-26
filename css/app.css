@@ -55,6 +55,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
+    align-items: center;
 }
 #nav .logo{
 	height: 2rem;
@@ -97,7 +98,7 @@ body {
 #header img{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+    min-height: 100%;
 }
 
 #formPasajes input[type="text"]{
@@ -121,7 +122,7 @@ body {
     /*background: #eaedf2;
     background-image: radial-gradient(ellipse at center, #f8f9fa 0%, #eaedf2 100%);*/
     background-color: rgba(255,255,255,.8);
-    padding: 20px;
+    padding: 10px 20px;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.699);
     text-transform: uppercase;
 }
@@ -147,7 +148,7 @@ body {
 }
 #btnPasajes{
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     width: 100%;
     border-radius: 0;
 
@@ -163,9 +164,36 @@ body {
 #formPasajes i{
     position: absolute;
     top: 50%;
-    left: 78%;
+    right: 25px;
     transform: translateY(-50%);
     font-size: 1rem;
+}
+/*************************************/
+#informacion{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+}
+#informacion i{
+    color: #fff;
+}
+#informacion h5{
+    font-size: .8rem;
+}
+#informacion a h4,
+#informacion a h4 i{
+    font-size: 1rem;
+    color: #fff;
+    transition: all .4s ease;
+}
+#informacion a{
+    text-decoration: none;
+}
+#informacion a h4:hover{
+    text-decoration: none;
+    color: var(--naranja);
 }
 /****************************************************************************************************/
 
@@ -315,7 +343,7 @@ body {
 
 #footer .contacto {
     color: var(--naranja);
-    text-shadow: 2px 2px 2px var(--color);
+    text-shadow: 1px 1px 2px var(--color);
 }
 #footer  h2{
 	text-align: center;
@@ -484,6 +512,9 @@ p {
 /******************************/
 
 @media (max-width: 576px){
+    #formPasajes{
+        margin-top: 50px;
+    }
     #navbar i{
         color: var(--naranja)
     }
@@ -503,6 +534,9 @@ p {
 	#servicios h3{
 		text-align: center;
 	}
+    #footer .contacto h3{
+        font-size: 1.5rem !important; 
+    }
 
 	#copy p{
 		padding: 10px;
