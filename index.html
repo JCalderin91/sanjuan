@@ -3,25 +3,30 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>SanJuan</title>
+   <title>San Juan</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+   <link href="css/custom.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 
 <body>
-
+	<!--Loader-->
+	<div class="loader"><div class="lds-ripple"><div></div><div></div></div></div>
+	<!--Loader-->
    <div id="nav" class="container-fluid">
       <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrollOn">
          <div class="container">
 
-            <!-- Brand -->
+            <!-- Logo -->
             <img class="logo" src="img/logo-sin-fondo.png">
 
-            <!-- Toggler/collapsibe Button -->
+            <!-- Botoón visible en modo responsive -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                <i class="fas fa-bars"></i>
             </button>
@@ -30,13 +35,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a data-ancla="empresa" class="ancla nav-link" href="#">Inicio</a>
+                     <a data-ancla="header" class="ancla nav-link" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                     <a data-ancla="servicios" class="ancla nav-link" href="#">Flota</a>
+                     <a data-ancla="flota" class="ancla nav-link" href="#">Flota</a>
                   </li>
                   <li class="nav-item">
-                     <a data-ancla="clientes" class="ancla nav-link" href="#">Viajes especiales</a>
+                     <a data-ancla="" class="ancla nav-link" href="#">Viajes especiales</a>
                   </li>
                   <li class="nav-item">
                      <a data-ancla="blog" class="ancla nav-link" href="#">Encomiendas</a>
@@ -64,9 +69,10 @@
 
    <header id="header">
 
-      <img src="img/DSC0006-01.jpeg" alt="">
+      <img id="imgHeader" class="img-flud" src="img/DSC0006-01.jpeg" alt="">
+
 		<div class="container">
-			<div class="row">
+			<div id="rowHeader" class="row">
 				<div class="col-12  col-md-4">
 					
 			      <form action="" id="formPasajes">
@@ -83,22 +89,24 @@
 			            </div>
 
 			            <div class="col-12 tipo">
-			               <h6><input type="radio"> Ida</h6>
-			               <h6><input type="radio"> Ida y vuelta</h6>
-			            </div>
+			               <h6><input id="radioIda" type="radio" name="optradio"> Ida</h6>
+			               <h6><input id="radioVuelta" type="radio" name="optradio"> Ida y vuelta</h6>
+							</div>
 
-			            <div class="col-6">
+			            <div class="ida col-6">
 			               <h6>Salida</h6>
 			            </div>
-			            <div class="col-6">
+			            <div class="vuelta col-6">
 			               <h6>Regreso</h6>
 			            </div>
 
-			            <div class="col-6">
-			               <input type="text" readonly=""><i class="far fa-calendar"></i>
+			            <div class="ida col-6">
+			            	<input class="salidaInput datepicker" type="text" readonly="">
+			               <i class="iconDate far fa-calendar"></i>
 			            </div>
-			            <div class="col-6">
-			               <input type="text" readonly=""><i class="far fa-calendar"></i>
+			            <div class="vuelta col-6">
+			               <input class="regresoInput datepicker" type="text" readonly="">
+			               <i class="iconDate far fa-calendar"></i>
 			            </div>
 
 			            <div class="col-6 offset-3">
@@ -112,22 +120,60 @@
 			      	<a href="#"><h4><i class="fas fa-map-marker-alt"></i> DONDE ESTAMOS</h4></a>
 			      </div>
 				</div>
+				<div class="col-12 col-md-8">
+				<!--/******************Carrusel*************************/-->				
+					<div id="carrusel" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#carrusel" data-slide-to="0" class="active"></li>
+							<li data-target="#carrusel" data-slide-to="1"></li>
+							<li data-target="#carrusel" data-slide-to="2"></li>
+						</ul>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="Los Angeles" width="1100" height="500">
+								<div class="carousel-caption">
+									<h3>Texto de ejemplo</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>   
+							</div>
+							<div class="carousel-item">
+								<img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="Chicago" width="1100" height="500">
+								<div class="carousel-caption">
+									<h3>Texto de ejemplo</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>   
+							</div>
+							<div class="carousel-item">
+								<img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="New York" width="1100" height="500">
+								<div class="carousel-caption">
+									<h3>Texto de ejemplo</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>   
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#carrusel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				<!--/******************Carrusel*************************/-->
+				</div>
 			</div>
 		</div>
 
       
-
-   </header>
-
    <div id="btn-mas">
       <a class="ancla" data-ancla="empresa" href="#">
          <i class="fas fa-arrow-alt-circle-down "></i>
       </a>
    </div>
 
-   <br>
+   </header>
 
    <br>
+
    <div id="empresa" class="container">
       <h2>Nuestra empresa</h2>
       <div class="empresa">
@@ -143,47 +189,10 @@
       </div>
    </div>
    <br>
-   <div id="servicios">
-      <div class="container-fluid subtitulo">
-         <h2>Ofrecemos diversos servicios</h2>
-      </div>
-      <br>
-
-      <div class="container">
-
-         <div class="row">
-            <div class="col-6">
-               <i class="fas fa-chart-line"></i>
-               <h3>Reliability</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
-                  optio beatae quidem?</p>
-            </div>
-            <div class="col-6">
-               <i class="fas fa-trophy"></i>
-               <h3>Expertise</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
-                  optio beatae quidem?</p>
-            </div>
-            <div class="col-6">
-               <i id="star" class="fas fa-star"></i>
-               <h3>Quality</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
-                  optio beatae quidem?</p>
-            </div>
-            <div class="col-6">
-               <i id="star" class="fas fa-chess"></i>
-               <h3>Royality</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore
-                  optio beatae quidem?</p>
-            </div>
-         </div>
-      </div>
-   </div>
-   <br>
-   <div id="clientes">
+   <div id="flota">
 
       <div class="container-fluid subtitulo">
-         <h2>Nuestros clientes</h2>
+         <h2>Nuestra flota</h2>
       </div>
       <br>
       <div class="container">
@@ -201,39 +210,39 @@
                <div class="carousel-item active">
                   <div class="row">
                      <div class="col-lg-6">
-                        <h2>Cliente 1</h2>
+                        <h2>Unidades</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
                            unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
                            ratione.</p>
                      </div>
                      <div class="col-lg-6">
-                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                        <img src="img/unidades.jpeg">
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="row">
                      <div class="col-lg-6">
-                        <h2>Cliente 2</h2>
+                        <h2>Comodidades</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
                            unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
                            ratione.</p>
                      </div>
                      <div class="col-lg-6">
-                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                        <img src="img/comodidades.jpeg">
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="row">
                      <div class="col-lg-6">
-                        <h2>Cliente 3</h2>
+                        <h2>Personal</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
                            unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui
                            ratione.</p>
                      </div>
                      <div class="col-lg-6">
-                        <img src="http://noticias.universia.com.ar/net/images/ciencia-tecnologia/e/eb/ebo/ebooks-desarrollo-web-descargar-gratis.jpg">
+                        <img src="img/personal.JPG">
                      </div>
                   </div>
                </div>
@@ -246,6 +255,65 @@
                <span class="carousel-control-next-icon"></span>
             </a>
 
+         </div>
+      </div>
+   </div>
+   <br>
+      <div id="pagos">
+      <div class="container-fluid subtitulo">
+         <h2>Ofrecemos diversos medios de pago</h2>
+      </div>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/05/ICBC.png" alt="">
+            	<p>6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/04/supervielle2.png" alt="">
+            	<p>3 y 6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/04/Provincia.png" alt="">
+            	<p>3 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2017/08/dinners.png" alt="">
+            	<p>3 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/05/Consumax.jpg" alt="">
+            	<p>6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/05/Credicoop.jpg" alt="">
+            	<p>2 a 6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/banco-provincia-1.jpg" alt="">
+            	<p>3 y 6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Italcred.jpg" alt="">
+            	<p>12 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Macro.jpg" alt="">
+            	<p>12 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Naranja.jpg" alt="">
+            	<p>6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Shopping.jpg" alt="">
+            	<p>6 cuotas</p>
+            </div>
+            <div class="col-6 col-md-2">
+            	<img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Visa.jpg" alt="">
+            	<p>3 cuotas</p>
+            </div>
          </div>
       </div>
    </div>
@@ -331,8 +399,11 @@
 
 
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="js/app.js"></script>
 
 </html>
