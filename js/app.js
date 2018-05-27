@@ -1,3 +1,6 @@
+$(document).ready(function(ev){
+    $('.loader').fadeOut(600);
+});
 $(document).on('scroll', function() {
     if ($(document).scrollTop() > 1) {
         $('#navbar').removeClass('scrollOn');
@@ -35,3 +38,50 @@ $(window).on("resize", function(ev){
     }
 });
 
+$( function() {
+    $( ".datepicker" ).datepicker();
+} );
+
+
+$( ".mi_calendario" ).datepicker({
+    // Formato de la fecha
+    dateFormat: "dd/mm/yy",
+    // Primer dia de la semana - lunes
+    firstDay: 1,
+    // Días largo traducido
+    dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ],
+    // Dias cortos traducido
+    dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
+    // Nombres largos de los meses traducido
+    monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
+    // Nombres cortos de los meses traducido 
+    monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec" ],
+    // Al selecconar fecha, se escribe en el campo de texto
+    onSelect: function(dateText) { 
+        $('#fecha').val(dateText);
+    }
+});
+
+$('.datepicker').on('change', function(ev){
+    if ($('.datepicker.salidaInput')[0].value != "") {
+        $('input.datepicker.salidaInput ~ i').hide()
+    }
+    if ($('.datepicker.regresoInput')[0].value != "") {
+        $('input.datepicker.regresoInput ~ i').hide()
+    }
+});
+
+
+//Control de los radio Button
+$("input[id='radioIda']:radio").attr('checked', true);
+$('.vuelta').hide();
+$("input[id='radioIda']:radio").on('change',function(ev){
+    if( $("input[id='radioIda']:radio").is(':checked') ) {  
+        $('.vuelta').fadeOut(400);
+    }
+});
+$("input[id='radioVuelta']:radio").on('change',function(ev){
+    if( $("input[id='radioVuelta']:radio").is(':checked') ) {  
+        $('.vuelta').fadeIn(400);
+    }
+});
