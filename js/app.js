@@ -1,6 +1,7 @@
 $(document).ready(function(ev){
     $('.loader').fadeOut(600);
 });
+
 $(document).on('scroll', function() {
     if ($(document).scrollTop() > 1) {
         $('#navbar').removeClass('scrollOn');
@@ -30,17 +31,6 @@ $('#nav-item.nav-link').on('click', function(e) {
 	$('#collapsibleNavbar').delay(1000).slideToggle(400);
 });
 
-$(window).on("resize", function(ev){
-    if ($(window).width() > 768) {
-        // No se debe ocultar el Nav
-    } else {
-       // Se puede ocultar el nav
-    }
-});
-
-$( function() {
-    $( ".datepicker" ).datepicker();
-} );
 
 
 $( ".mi_calendario" ).datepicker({
