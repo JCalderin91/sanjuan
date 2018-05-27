@@ -1,4 +1,5 @@
 /*rgb(255, 165, 0) var(--naranja)**/
+
 /*
 [class^='col-']{
 	border: 1px solid red;
@@ -6,16 +7,18 @@
 .row{
 	border: 1px solid blue;
 }*/
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 .container-fluid {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-:root{
+:root {
     --color: #5c6b80;
-    --naranja: rgb(232,83,12);
+    --naranja: rgb(232, 83, 12);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -24,48 +27,56 @@
     box-sizing: border-box;
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--color);
-
 }
-
 
 body {
     background-color: #eee;
 }
-#navbar{
-	transition: all .5s ease;
+
+#navbar {
+    transition: all .5s ease;
 }
-#navbar img{
+
+#navbar img {
     width: 130px;
     height: auto;
 }
-.scrollOff{
-	background-color: #444 !important;
-	box-shadow: 0 5px 10px rgba(0,0,0,.5);
+
+.scrollOff {
+    background-color: #444 !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
 }
-.scrollOff li a{
+
+.scrollOff li a {
     color: #fff !important;
 }
-.scrollOn{
-    background-color: rgb(255,255,255) !important;
+
+.scrollOn {
+    background-color: rgb(255, 255, 255) !important;
 }
-.scrollOn li a{
+
+.scrollOn li a {
     color: var(--color) !important;
 }
-#nav ul{
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
+
+#nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
-#nav .logo{
-	height: 2rem;
+
+#nav .logo {
+    height: 2rem;
 }
-#nav li a{
-	text-align: center;
+
+#nav li a {
+    text-align: center;
     transition: all .5s ease;
     position: relative;
 }
-#navbar li a:after{
+
+#navbar li a:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -76,11 +87,13 @@ body {
     background-color: var(--naranja);
     transition: all .3s ease;
 }
-#navbar li a:hover:after{
+
+#navbar li a:hover:after {
     width: 100%;
 }
-#nav ul li a:hover{
-	color: #ff793b !important;
+
+#nav ul li a:hover {
+    color: #ff793b !important;
 }
 
 /****************************************************************************************************/
@@ -93,251 +106,301 @@ body {
     background-color: #999;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 #header #imgHeader {
-	position: absolute;
-    left:  50%;
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
-	min-width: 100%;
+    min-width: 100%;
     width: auto;
     height: 100%;
 }
 
-#formPasajes input[type="text"]{
+#formPasajes input[type="text"] {
     width: 100%;
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 3px;
     transition: all .5s ease;
 }
-#formPasajes input[type="text"]:focus{
-    border-bottom: 2px solid #ff793b;
+
+#formPasajes input[type="text"]:focus {
+    border-bottom: 2px solid var(--naranja);
     background-color: rgba(0, 0, 0, .08);
 }
 
 /******************************************************/
-.datepicker-dropdown {
+
+/* .datepicker-dropdown {
     top: 0;
     left: 0;
     padding-left: 24px;
     padding-right: 24px;
     border-radius: 4px;
 }
-.ui-datepicker-calendar{
+.ui-datepicker-calendar {
     width: 100%;
 }
+.ui-datepicker,
+.datepicker table{
+    background-color: #fff;
+}
+
 .datepicker table tr td,
 .datepicker table tr th {
     text-align: center;
-    width: 30px; 
+    width: 30px;
     height: 30px;
-    border-radius: 4px; 
+    border-radius: 4px;
     border: none;
-    color: #000; 
-    cursor: pointer !important; 
+    color: #000;
+    cursor: pointer !important;
 }
+
 .datepicker table tr td.day:hover,
-    .datepicker table tr td.focused {
+.datepicker table tr td.focused {
     background: red;
 }
+
 .datepicker table tr td.old,
 .datepicker table tr td.new {
     color: #999;
 }
+
 .datepicker table tr td.today {
     color: white !important;
-    background-color: #FFA953; 
-    border-color: #FFB76F;  
+    background-color: #FFA953;
+    border-color: #FFB76F;
 }
+
 .datepicker table tr td.today:hover {
     color: #FFFFFF;
     background-color: #FF8273;
     border-color: #f59e00;
-    cursor: pointer !important; 
+    cursor: pointer !important;
 }
+
 .datepicker .datepicker-switch {
     width: 145px;
 }
+
 .datepicker .datepicker-switch:hover,
 .datepicker .prev:hover,
 .datepicker .next:hover,
 .datepicker tfoot tr th:hover {
     background: #f8f8f8;
-} 
+}
+
 .ui-datepicker {
     width: 15.20em !important;
     font-family: 'Jaldi', sans-serif !important;
     border: 1px solid #ccc !important;
 }
+
 .ui-datepicker-header {
     border-radius: 0px !important;
     background-color: #ededed !important;
     background: #ededed !important;
     border: none !important;
 }
+
 .ui-datepicker-next {
     color: #000 !important;
-    top:3px !important;
+    top: 3px !important;
     right: 3px !important;
 }
+
 .ui-datepicker-prev {
     color: #000 !important;
-    top:3px !important;
+    top: 3px !important;
     left: 3px !important;
 }
+
 .ui-datepicker-next:hover {
     border: none !important;
-    top:3px !important;
+    top: 3px !important;
     right: 3px !important;
     background: white !important;
     cursor: pointer;
 }
+
 .ui-datepicker-prev:hover {
     border: none !important;
-    top:3px !important;
+    top: 3px !important;
     left: 3px !important;
     background: white !important;
     cursor: pointer;
 }
+
 .ui-state-default {
     background: none !important;
     background-color: #ededed;
 }
-.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
     background: none !important;
     background-color: #eaeaea !important;
     border: 1px solid #A51E1E !important;
     border-radius: 10% !important;
 }
-.ui-state-active, .ui-widget-content .ui-state-active {
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
     background-color: #a1a1a1 !important;
     color: whitesmoke !important;
     font-weight: bold !important;
     border: 1px solid #d3d3d3 !important;
 }
+
 #date-picker-expirate .ui-datepicker-calendar {
     display: none;
 }
+
 .ui-widget select {
     font-family: 'Jaldi', sans-serif !important;
     font-size: 14px !important;
 }
-.ui-priority-primary, .ui-widget-content {
+
+.ui-priority-primary,
+.ui-widget-content {
     font-weight: normal !important;
 }
+
 .ui-datepicker-close {
     color: #fff !important;
     background-color: #5cb85c !important;
     border-color: #4cae4c !important;
     font-size: 14px !important;
 }
+
 .hide-calendar .ui-datepicker-calendar {
     display: none;
 }
+
 #startDate {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 6px;
 }
+
 .ui-datepicker-current {
     display: none !important;
 }
+
 .ui-datepicker-buttonpane {
-    float: left !important; 
+    float: left !important;
     padding: 0 !important;
-}
+} */
+
 /************************************************************/
 
-#formPasajes{
+#formPasajes {
     width: 100%;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
     padding: 10px 20px;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.699);
     text-transform: uppercase;
 }
-#formPasajes a i{
+
+#formPasajes a i {
     font-size: 2rem;
     color: var(--color);
 }
-#formPasajes h4{
+
+#formPasajes h4 {
     text-align: center;
     font-size: 1.35rem;
 }
-#formPasajes h6{
+
+#formPasajes h6 {
     margin-top: 5px;
     font-family: 'Roboto', sans-serif !important;
     margin-bottom: 2px;
     font-weight: bold;
     font-size: 0.83rem;
 }
-#formPasajes .tipo h6{
+
+#formPasajes .tipo h6 {
     font-size: .8rem;
     display: inline-block;
     font-weight: normal;
 }
-#btnPasajes{
+
+#btnPasajes {
     margin-top: 10px;
     padding: 5px 10px;
     width: 100%;
     border-radius: 0;
-
     background-color: var(--naranja);
     color: #fff !important;
     transition: all .5s ease;
     text-shadow: none;
 }
-#btnPasajes:hover{
-    background-color: rgb(235,145,0);
+
+#btnPasajes:hover {
+    background-color: rgb(235, 145, 0);
     color: #fff !important;
 }
-#formPasajes i{
+
+#formPasajes i {
     position: absolute;
-    top: 50%;
+    bottom: 0px;
     right: 25px;
     transform: translateY(-50%);
     font-size: 1rem;
 }
+
 /*************************************/
-#informacion{
+
+#informacion {
     padding: 10px 20px;
     width: 100%;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     color: #fff;
     text-align: center;
 }
-#informacion i{
+
+#informacion i {
     color: #fff;
 }
-#informacion h5{
+
+#informacion h5 {
     font-size: .8rem;
 }
+
 #informacion a h4,
-#informacion a h4 i{
+#informacion a h4 i {
     font-size: 1rem;
     color: #fff;
     transition: all .4s ease;
 }
-#informacion a{
+
+#informacion a {
     text-decoration: none;
 }
-#informacion a h4:hover{
+
+#informacion a h4:hover {
     text-decoration: none;
     color: var(--naranja);
 }
+
 /****************************************************************************************************/
-#carrusel img{
+
+#carrusel img {
     width: 100%;
     height: auto;
 }
-#carrusel p{
+
+#carrusel p {
     text-align: center !important;
 }
 
 /****************************************************************************************************/
-#rowHeader{
+
+#rowHeader {
     display: flex;
     align-items: center;
     margin: 80px auto 50px auto;
@@ -351,9 +414,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     animation: jump 2.5s ease infinite;
-
 }
-#btn-mas a i{
+
+#btn-mas a i {
     color: #fff !important;
 }
 
@@ -373,7 +436,6 @@ body {
     font-size: 2rem;
     text-shadow: 0px -2px 5px rgba(0, 0, 0, .4);
 }
-
 
 #body img {
     width: 100%;
@@ -419,12 +481,12 @@ body {
     position: relative;
     transition: all .5s ease;
 }
-#footer p{
+
+#footer p {
     color: #fff;
     font-family: 1.5rem;
     margin-bottom: 0;
 }
-
 
 #footer i {
     color: var(--naranja);
@@ -492,13 +554,13 @@ body {
     color: var(--naranja);
     text-shadow: 1px 1px 2px var(--color);
 }
-#footer  h2{
-	text-align: center;
-    color: var(--naranja)
+
+#footer h2 {
+    text-align: center;
+    color: var(--naranja);
     text-shadow: 1px 1px 3px #fff;
     font-weight: bold;
     padding: 20px;
-
 }
 
 #footer .contacto h3 {
@@ -531,8 +593,9 @@ a {
     background-color: #222;
     text-align: center !important;
 }
+
 #copy p {
-	padding: 20px;
+    padding: 20px;
     color: #aaa;
     margin-bottom: 0px !important;
     text-align: center !important;
@@ -559,14 +622,21 @@ i.fa-trophy {
 i.fa-star {
     color: #fbbc05;
 }
-i.fa-chess{
-	color: #d5c2a6;
-}
 
-*::-moz-selection,
+i.fa-chess {
+    color: #d5c2a6;
+}
+*:-webkit-selection {
+    background: var(--naranja) !important;
+    color: black !important;
+}
+*::-moz-selection {
+    background: var(--naranja) !important;
+    color: black !important;
+}
 *::selection {
-    background-color: var(--naranja)
-    color: black;
+    background: var(--naranja) !important;
+    color: black !important;
 }
 
 #footer {
@@ -579,34 +649,43 @@ i.fa-chess{
     /* Establecemos una posicion fija para la imagen */
     background-color: #444;
 }
-#footer a{
+
+#footer a {
     text-decoration: none;
 }
-#footer .fab{
-	color: #fff;
-	transition: all .5s ease;
-	padding: 20px 10px;
+
+#footer .fab {
+    color: #fff;
+    transition: all .5s ease;
+    padding: 20px 10px;
 }
-#footer .fab.fa-facebook:hover{
-	color: #4867aa !important;
+
+#footer .fab.fa-facebook:hover {
+    color: #4867aa !important;
 }
-#footer .fab.fa-twitter-square:hover{
-	color: #00aced !important;
+
+#footer .fab.fa-twitter-square:hover {
+    color: #00aced !important;
 }
-#footer .fab.fa-instagram:hover{
-	color: #c34d8a !important;
+
+#footer .fab.fa-instagram:hover {
+    color: #c34d8a !important;
 }
-#footer .fab.fa-whatsapp-square:hover{
-	color: #47c756 !important;
+
+#footer .fab.fa-whatsapp-square:hover {
+    color: #47c756 !important;
 }
 
 .empresa-banner {
     width: 100vw;
     height: 300px;
     background-image: url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png);
-    background-repeat: no-repeat; /* Indicamos que no se repetira */
-    background-size: cover;/* Encajamos la imagen al 100% del ancho */
-    background-attachment: fixed;/* Establecemos una posicion fija para la imagen */
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
 }
 
 .empresa-banner .row {
@@ -617,33 +696,42 @@ i.fa-chess{
     text-align: center;
 }
 
-#pagos .subtitulo{
+#pagos .subtitulo {
     background-image: url(http://www.quimasa.com/wp-content/uploads/2018/03/servicios.jpg);
 }
 
-#pagos img{
+#pagos img {
     width: 100%;
+    height: 100%;
 }
-#pagos p{
+
+#pagos p {
     text-align: center;
 }
-#flota .subtitulo{
+
+#flota .subtitulo {
     background-image: url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg);
 }
+
 .subtitulo {
-	position: relative;
+    position: relative;
     margin-bottom: 30px;
     width: 100vw;
     height: 200px;
-    background-repeat: no-repeat; /* Indicamos que no se repetira */
-    background-size: cover;/* Encajamos la imagen al 100% del ancho */
-    background-attachment: fixed;/* Establecemos una posicion fija para la imagen */
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
 }
-.subtitulo h2{
+
+.subtitulo h2 {
     text-align: center;
-	position: absolute;
-	top: 50%; left: 50%;
-	transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--naranja);
     font-size: 2.5rem;
     text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
@@ -653,65 +741,65 @@ p {
     text-align: justify;
 }
 
-#btn-arriba{
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	font-size: 2.5rem;
-	color: var(--naranja);
-}
-#btn-arriba i{
+#btn-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
     color: var(--naranja);
 }
 
-#carousel img{
-	width: 100%;
+#btn-arriba i {
+    color: var(--naranja);
 }
+
+#carousel img {
+    width: 100%;
+}
+
 /******************************/
 
-@media (max-width: 576px){
-    #formPasajes{
+@media (max-width: 576px) {
+    #formPasajes {
         margin-top: 50px;
     }
-    #navbar i{
+    #navbar i {
         color: var(--naranja)
     }
-	#header .cont-header{
-		width: 100vw;
-	}
-	#header .cont-subtitulo{
-		display: none;
-	}
-	.subtitulo h2{
-		text-align: center;
-		font-size: 2rem;
-	}
-
-	#footer,
-	#footer p,
-	#servicios h3{
-		text-align: center;
-	}
-    #footer .contacto h3{
-        font-size: 1.5rem !important; 
+    #header .cont-header {
+        width: 100vw;
     }
-
-	#copy p{
-		padding: 10px;
-		margin: 0;
-	}
-
-}
-@media (max-width: 768px){
-    #btn-mas{
+    #header .cont-subtitulo {
         display: none;
     }
+    .subtitulo h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    #footer,
+    #footer p,
+    #servicios h3 {
+        text-align: center;
+    }
+    #footer .contacto h3 {
+        font-size: 1.5rem !important;
+    }
+    #copy p {
+        padding: 10px;
+        margin: 0;
+    }
+}
 
+@media (max-width: 768px) {
+    #btn-mas {
+        display: none;
+    }
 }
 
 /***********Loader*********/
-.loader{
+
+.loader {
     background-color: #eee;
     position: absolute;
     width: 100vw;
@@ -721,36 +809,95 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .lds-ripple {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
 }
+
 .lds-ripple div {
-  position: absolute;
-  border: 4px solid var(--naranja);
-  opacity: 1;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes lds-ripple {
-  0% {
-    top: 28px;
-    left: 28px;
-    width: 0;
-    height: 0;
+    position: absolute;
+    border: 4px solid var(--naranja);
     opacity: 1;
-  }
-  100% {
-    top: -1px;
-    left: -1px;
-    width: 58px;
-    height: 58px;
-    opacity: 0;
-  }
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
 }
 /***********Loader*********/
+
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
