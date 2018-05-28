@@ -93,7 +93,7 @@ body {
 }
 
 #nav ul li a:hover {
-    color: #ff793b !important;
+    color: var(--naranja) !important;
 }
 
 /****************************************************************************************************/
@@ -106,8 +106,19 @@ body {
     background-color: #999;
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+#header #checks .boxChecks{
+    display: inline-block !important;
 }
 
+#header #checks{
+    display: flex;
+    justify-content: space-between;
+}
+#header #checks .boxChecks{
+    padding-left: 30px !important;
+}
 #header #imgHeader {
     position: absolute;
     left: 50%;
@@ -115,6 +126,11 @@ body {
     min-width: 100%;
     width: auto;
     height: 100%;
+}
+#tipoViajeCheck{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #parametros_busqueda_servicios_home input[type="text"] {
@@ -130,177 +146,10 @@ body {
     background-color: rgba(0, 0, 0, .08);
 }
 
-/******************************************************/
-
-/* .datepicker-dropdown {
-    top: 0;
-    left: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    border-radius: 4px;
-}
-.ui-datepicker-calendar {
-    width: 100%;
-}
-.ui-datepicker,
-.datepicker table{
-    background-color: #fff;
-}
-
-.datepicker table tr td,
-.datepicker table tr th {
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    color: #000;
-    cursor: pointer !important;
-}
-
-.datepicker table tr td.day:hover,
-.datepicker table tr td.focused {
-    background: red;
-}
-
-.datepicker table tr td.old,
-.datepicker table tr td.new {
-    color: #999;
-}
-
-.datepicker table tr td.today {
-    color: white !important;
-    background-color: #FFA953;
-    border-color: #FFB76F;
-}
-
-.datepicker table tr td.today:hover {
-    color: #FFFFFF;
-    background-color: #FF8273;
-    border-color: #f59e00;
-    cursor: pointer !important;
-}
-
-.datepicker .datepicker-switch {
-    width: 145px;
-}
-
-.datepicker .datepicker-switch:hover,
-.datepicker .prev:hover,
-.datepicker .next:hover,
-.datepicker tfoot tr th:hover {
-    background: #f8f8f8;
-}
-
-.ui-datepicker {
-    width: 15.20em !important;
-    font-family: 'Jaldi', sans-serif !important;
-    border: 1px solid #ccc !important;
-}
-
-.ui-datepicker-header {
-    border-radius: 0px !important;
-    background-color: #ededed !important;
-    background: #ededed !important;
-    border: none !important;
-}
-
-.ui-datepicker-next {
-    color: #000 !important;
-    top: 3px !important;
-    right: 3px !important;
-}
-
-.ui-datepicker-prev {
-    color: #000 !important;
-    top: 3px !important;
-    left: 3px !important;
-}
-
-.ui-datepicker-next:hover {
-    border: none !important;
-    top: 3px !important;
-    right: 3px !important;
-    background: white !important;
-    cursor: pointer;
-}
-
-.ui-datepicker-prev:hover {
-    border: none !important;
-    top: 3px !important;
-    left: 3px !important;
-    background: white !important;
-    cursor: pointer;
-}
-
-.ui-state-default {
-    background: none !important;
-    background-color: #ededed;
-}
-
-.ui-state-highlight,
-.ui-widget-content .ui-state-highlight {
-    background: none !important;
-    background-color: #eaeaea !important;
-    border: 1px solid #A51E1E !important;
-    border-radius: 10% !important;
-}
-
-.ui-state-active,
-.ui-widget-content .ui-state-active {
-    background-color: #a1a1a1 !important;
-    color: whitesmoke !important;
-    font-weight: bold !important;
-    border: 1px solid #d3d3d3 !important;
-}
-
-#date-picker-expirate .ui-datepicker-calendar {
-    display: none;
-}
-
-.ui-widget select {
-    font-family: 'Jaldi', sans-serif !important;
-    font-size: 14px !important;
-}
-
-.ui-priority-primary,
-.ui-widget-content {
-    font-weight: normal !important;
-}
-
-.ui-datepicker-close {
-    color: #fff !important;
-    background-color: #5cb85c !important;
-    border-color: #4cae4c !important;
-    font-size: 14px !important;
-}
-
-.hide-calendar .ui-datepicker-calendar {
-    display: none;
-}
-
-#startDate {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 6px;
-}
-
-.ui-datepicker-current {
-    display: none !important;
-}
-
-.ui-datepicker-buttonpane {
-    float: left !important;
-    padding: 0 !important;
-} */
-
-/************************************************************/
-
 #parametros_busqueda_servicios_home {
     width: 100%;
     background-color: rgba(255, 255, 255, .8);
-    padding: 10px 20px;
+    padding: 20px;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.699);
     text-transform: uppercase;
 }
@@ -308,6 +157,10 @@ body {
 #parametros_busqueda_servicios_home a i {
     font-size: 2rem;
     color: var(--color);
+}
+#header .iconDate.far.fa-calendar{
+    color: var(--naranja) !important;
+    filter: opacity(.5);
 }
 
 #parametros_busqueda_servicios_home h4 {
@@ -341,8 +194,7 @@ body {
 }
 
 #btnPasajes:hover {
-    background-color: rgb(235, 145, 0);
-    color: #fff !important;
+    cursor: pointer;
 }
 
 #parametros_busqueda_servicios_home i {
@@ -437,20 +289,25 @@ body {
     text-shadow: 0px -2px 5px rgba(0, 0, 0, .4);
 }
 
-#carruselDestinos img{
+#carruselDestinos img {
     width: 100%;
     height: auto;
     font-size: .8rem;
 }
-#carruselDestinos h3{
+
+#carruselDestinos h3 {
     color: var(--color);
     text-shadow: 1px 1px 2px #fff;
     margin: 10px 0;
 }
-#carruselDestinos a{
+
+#carruselDestinos a {
     padding: 10px 20px;
     background-color: var(--naranja);
     color: #fff !important;
+}
+#carruselDestinos .row div[class^='col-']{
+    margin-top: 5px;
 }
 
 #body img {
@@ -472,7 +329,7 @@ body {
     padding: 20px 0;
     background-color: #131627;
     color: #fff;
-    padding: 20px;
+
 }
 
 #contacto ul li {
@@ -513,13 +370,23 @@ body {
 #form button {
     width: 100%;
     text-align: center;
-    background-color: #ff793b;
-    color: white;
+    background-color: transparent;
+    color: var(--naranja);
+    border: 1px solid var(--naranja);
     transition: all .5s ease;
 }
-
+#form button i{
+    color: var(--naranja);
+    transition: all .5s ease;
+}
 #form button:hover {
-    color: rgb(165, 75, 0);
+    background-color: var(--naranja);
+    color: #fff;
+    border: 1px solid var(--naranja);
+}
+
+#form button:hover i {
+    color: #fff;
 }
 
 #form button i {
@@ -527,8 +394,8 @@ body {
 }
 
 #contacto #form {
-    background-color: #fff;
-    padding: 10px;
+    background-color: #eee;
+    padding: 0 10px;
     border-radius: 10px;
 }
 
@@ -539,8 +406,9 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     width: 100%;
     min-width: 100%;
-    padding: 5px;
+    padding: 3px;
     margin: 3px;
+    background-color: #fff;
 }
 
 #contacto #form textarea {
@@ -550,12 +418,11 @@ body {
 
 #contacto #form input:focus,
 #contacto #form textarea:focus {
-    border-bottom: 1px solid rgba(255, 165, 0, .8);
-    background-color: #eee;
+    background-color: #fff;
 }
 
 #contacto #form h4 {
-    background-color: #ff702e;
+    background-color: var(--naranja);
     text-align: center;
     font-weight: bold;
     color: #fff;
@@ -585,37 +452,101 @@ body {
     text-shadow: 1px 1px 3px #000;
 }
 
-#contacto #form input.btn {
-    background-color: #ff702e !important;
-    font-weight: bold;
-    color: #603e00;
-    box-shadow: 0 5px 5px rgba(255, 255, 255, .2);
-}
 
 #contacto #form a {
     margin-top: 15px;
 }
 
 #contacto #form .row {
-    margin-top: -30px;
     padding: 10px;
+}
+
+#checks .boxChecks {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+}
+
+#checks .boxChecks input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#checks .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid rgba(255, 121, 59, 3);
+    border-radius: 5px;
+}
+
+/* Cuando el cursor este encima se le aplica el color gris */
+
+#checks .boxChecks:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/*Cuando es seleccionado se le coloca el color naranja */
+
+#checks .boxChecks input:checked~.checkmark {
+    background-color: var(--naranja);
+}
+
+/* Se crea el indicador */
+
+#checks .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* y s muestra al ser seleccionado */
+
+#checks .boxChecks input:checked~.checkmark:after {
+    display: block;
+}
+
+#checks .boxChecks .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 a {
     color: var(--naranja) !important;
     text-decoration: none !important;
-
 }
-#imgLogos{
+
+#imgLogos {
     display: flex;
     justify-content: flex-end;
 }
-#imgLogos img{
+
+#imgLogos img {
     width: 2.5rem;
     height: 2.5rem;
     margin: 5px;
 }
-#imgLogos div[class='col-2']{
+
+#imgLogos div[class='col-2'] {
     background-color: #fff;
     margin: 10px 0px;
 }
@@ -633,39 +564,17 @@ a {
     text-align: center !important;
 }
 
-i.fa-chart-line,
-i.fa-trophy,
-i.fa-star,
-i.fa-chess {
-    font-size: 6rem !important;
-    text-align: center !important;
-    display: block !important;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, .15) !important;
-}
 
-i.fa-chart-line {
-    color: #e91e63;
-}
-
-i.fa-trophy {
-    color: #3acbde;
-}
-
-i.fa-star {
-    color: #fbbc05;
-}
-
-i.fa-chess {
-    color: #d5c2a6;
-}
 *:-webkit-selection {
     background: var(--naranja) !important;
     color: black !important;
 }
+
 *::-moz-selection {
     background: var(--naranja) !important;
     color: black !important;
 }
+
 *::selection {
     background: var(--naranja) !important;
     color: black !important;
@@ -682,7 +591,7 @@ i.fa-chess {
     background-color: #444;
 }
 
-#iconRedes{
+#iconRedes {
     display: flex;
     justify-content: flex-start;
 }
@@ -690,7 +599,7 @@ i.fa-chess {
 #iconRedes .fab {
     font-size: 2.5rem;
     color: var(--color);
-    transition: all .5s ease;
+    transition: all .2s ease;
     padding: 10px 10px;
 }
 
@@ -736,13 +645,14 @@ i.fa-chess {
 
 #pagos img {
     width: 100%;
-/*     height: 100%; */
+    /*     height: 100%; */
 }
 
 #pagos p {
     text-align: center;
 }
-#pagos .row{
+
+#pagos .row {
     display: flex;
     align-items: flex-end;
 }
@@ -750,7 +660,8 @@ i.fa-chess {
 #flota .subtitulo {
     background-image: url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg);
 }
-#destinos{
+
+#destinos {
     background-image: url(https://www.tapps.net/wp-content/uploads/2017/06/recorrer-europa.jpg);
 }
 
@@ -830,6 +741,30 @@ p {
         padding: 10px;
         margin: 0;
     }
+    ul.ui-autocomplete {
+        left: 0px !important;
+        width: 100vw !important;
+        padding: 0 2px !important;
+    }
+
+    ul.ui-widget-content a {
+        color: var(--color) !important;
+    }
+
+    a#ui-active-menuitem {
+        color: var(--naranja) !important;
+    }
+
+    a.ui-state-hover {
+        color: var(--naranja) !important;
+        border: none !important;
+    }
+    #imgLogos, 
+    #iconRedes{
+        justify-content: center;
+    }
+    
+
 }
 
 @media (max-width: 768px) {
@@ -886,8 +821,8 @@ p {
         opacity: 0;
     }
 }
-/***********Loader*********/
 
+/***********Loader*********/
 
 .autocomplete {
     /*the container must be positioned relative:*/
@@ -908,7 +843,7 @@ input[type=text] {
 }
 
 input[type=submit] {
-    background-color: DodgerBlue;
+    background-color: var(--naranja);
     color: #fff;
     cursor: pointer;
 }
@@ -939,6 +874,20 @@ input[type=submit] {
 
 .autocomplete-active {
     /*when navigating through the items using the arrow keys:*/
-    background-color: DodgerBlue !important;
+    background-color: var(--naranja) !important;
     color: #ffffff;
+}
+ul.ui-autocomplete{
+    width: auto !important;
+    padding: 0 2px !important;
+}
+ul.ui-widget-content a {
+    color: var(--color) !important;
+}
+a#ui-active-menuitem{
+    color: var(--naranja) !important;
+}
+a.ui-state-hover{
+    color: var(--naranja) !important;
+    border: none !important;
 }
