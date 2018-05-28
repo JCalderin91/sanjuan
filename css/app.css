@@ -117,7 +117,7 @@ body {
     height: 100%;
 }
 
-#formPasajes input[type="text"] {
+#parametros_busqueda_servicios_home input[type="text"] {
     width: 100%;
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -125,7 +125,7 @@ body {
     transition: all .5s ease;
 }
 
-#formPasajes input[type="text"]:focus {
+#parametros_busqueda_servicios_home input[type="text"]:focus {
     border-bottom: 2px solid var(--naranja);
     background-color: rgba(0, 0, 0, .08);
 }
@@ -297,7 +297,7 @@ body {
 
 /************************************************************/
 
-#formPasajes {
+#parametros_busqueda_servicios_home {
     width: 100%;
     background-color: rgba(255, 255, 255, .8);
     padding: 10px 20px;
@@ -305,17 +305,17 @@ body {
     text-transform: uppercase;
 }
 
-#formPasajes a i {
+#parametros_busqueda_servicios_home a i {
     font-size: 2rem;
     color: var(--color);
 }
 
-#formPasajes h4 {
+#parametros_busqueda_servicios_home h4 {
     text-align: center;
     font-size: 1.35rem;
 }
 
-#formPasajes h6 {
+#parametros_busqueda_servicios_home h6 {
     margin-top: 5px;
     font-family: 'Roboto', sans-serif !important;
     margin-bottom: 2px;
@@ -323,7 +323,7 @@ body {
     font-size: 0.83rem;
 }
 
-#formPasajes .tipo h6 {
+#parametros_busqueda_servicios_home .tipo h6 {
     font-size: .8rem;
     display: inline-block;
     font-weight: normal;
@@ -345,7 +345,7 @@ body {
     color: #fff !important;
 }
 
-#formPasajes i {
+#parametros_busqueda_servicios_home i {
     position: absolute;
     bottom: 0px;
     right: 25px;
@@ -437,6 +437,22 @@ body {
     text-shadow: 0px -2px 5px rgba(0, 0, 0, .4);
 }
 
+#carruselDestinos img{
+    width: 100%;
+    height: auto;
+    font-size: .8rem;
+}
+#carruselDestinos h3{
+    color: var(--color);
+    text-shadow: 1px 1px 2px #fff;
+    margin: 10px 0;
+}
+#carruselDestinos a{
+    padding: 10px 20px;
+    background-color: var(--naranja);
+    color: #fff !important;
+}
+
 #body img {
     width: 100%;
     height: 100%;
@@ -448,47 +464,47 @@ body {
     transform: translate(0, -50%);
 }
 
-#footer h5 i {
+#contacto h5 i {
     font-size: 100%;
 }
 
-#footer {
+#contacto {
     padding: 20px 0;
     background-color: #131627;
     color: #fff;
     padding: 20px;
 }
 
-#footer ul li {
+#contacto ul li {
     list-style: none;
 }
 
-#footer li input {
+#contacto li input {
     width: 100%;
     border: 1px solid #fff;
     padding: 5px;
     border-radius: 5px 5px 0 0;
 }
 
-#footer li a {
+#contacto li a {
     width: 100%;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 0 0 5px 5px;
 }
 
-#footer a {
+#contacto a {
     position: relative;
     transition: all .5s ease;
 }
 
-#footer p {
+#contacto p {
     color: #fff;
     font-family: 1.5rem;
     margin-bottom: 0;
 }
 
-#footer i {
+#contacto i {
     color: var(--naranja);
     font-size: 2rem;
     padding: 0 5px;
@@ -510,14 +526,14 @@ body {
     font-size: 100%;
 }
 
-#footer #form {
+#contacto #form {
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
 }
 
-#footer #form textarea,
-#footer #form input {
+#contacto #form textarea,
+#contacto #form input {
     transition: all .5s ease;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -527,18 +543,18 @@ body {
     margin: 3px;
 }
 
-#footer #form textarea {
+#contacto #form textarea {
     min-height: 50px;
     max-height: 100px;
 }
 
-#footer #form input:focus,
-#footer #form textarea:focus {
+#contacto #form input:focus,
+#contacto #form textarea:focus {
     border-bottom: 1px solid rgba(255, 165, 0, .8);
     background-color: #eee;
 }
 
-#footer #form h4 {
+#contacto #form h4 {
     background-color: #ff702e;
     text-align: center;
     font-weight: bold;
@@ -550,12 +566,12 @@ body {
     margin-bottom: 30px;
 }
 
-#footer .contacto {
+#contacto .contacto {
     color: var(--naranja);
     text-shadow: 1px 1px 2px var(--color);
 }
 
-#footer h2 {
+#contacto h2 {
     text-align: center;
     color: var(--naranja);
     text-shadow: 1px 1px 3px #fff;
@@ -563,40 +579,56 @@ body {
     padding: 20px;
 }
 
-#footer .contacto h3 {
+#contacto .contacto h3 {
     font-weight: bold;
     font-size: 2rem;
     text-shadow: 1px 1px 3px #000;
 }
 
-#footer #form input.btn {
+#contacto #form input.btn {
     background-color: #ff702e !important;
     font-weight: bold;
     color: #603e00;
     box-shadow: 0 5px 5px rgba(255, 255, 255, .2);
 }
 
-#footer #form a {
+#contacto #form a {
     margin-top: 15px;
 }
 
-#footer #form .row {
+#contacto #form .row {
     margin-top: -30px;
     padding: 10px;
 }
 
 a {
     color: var(--naranja) !important;
+    text-decoration: none !important;
+
+}
+#imgLogos{
+    display: flex;
+    justify-content: flex-end;
+}
+#imgLogos img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 5px;
+}
+#imgLogos div[class='col-2']{
+    background-color: #fff;
+    margin: 10px 0px;
 }
 
 #copy {
-    background-color: #222;
+    background-color: #fff;
     text-align: center !important;
 }
 
 #copy p {
-    padding: 20px;
-    color: #aaa;
+    padding: 10px;
+    font-size: .8rem;
+    color: var(--color);
     margin-bottom: 0px !important;
     text-align: center !important;
 }
@@ -639,7 +671,7 @@ i.fa-chess {
     color: black !important;
 }
 
-#footer {
+#contacto {
     /*background-image: url(https://i.ytimg.com/vi/dGiUO62LG1g/maxresdefault.jpg);
     background-repeat: no-repeat;
      Indicamos que no se repetira */
@@ -650,29 +682,31 @@ i.fa-chess {
     background-color: #444;
 }
 
-#footer a {
-    text-decoration: none;
+#iconRedes{
+    display: flex;
+    justify-content: flex-start;
 }
 
-#footer .fab {
-    color: #fff;
+#iconRedes .fab {
+    font-size: 2.5rem;
+    color: var(--color);
     transition: all .5s ease;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
-#footer .fab.fa-facebook:hover {
+#iconRedes .fab.fa-facebook:hover {
     color: #4867aa !important;
 }
 
-#footer .fab.fa-twitter-square:hover {
+#iconRedes .fab.fa-twitter-square:hover {
     color: #00aced !important;
 }
 
-#footer .fab.fa-instagram:hover {
+#iconRedes .fab.fa-instagram:hover {
     color: #c34d8a !important;
 }
 
-#footer .fab.fa-whatsapp-square:hover {
+#iconRedes .fab.fa-whatsapp-square:hover {
     color: #47c756 !important;
 }
 
@@ -702,15 +736,22 @@ i.fa-chess {
 
 #pagos img {
     width: 100%;
-    height: 100%;
+/*     height: 100%; */
 }
 
 #pagos p {
     text-align: center;
 }
+#pagos .row{
+    display: flex;
+    align-items: flex-end;
+}
 
 #flota .subtitulo {
     background-image: url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg);
+}
+#destinos{
+    background-image: url(https://www.tapps.net/wp-content/uploads/2017/06/recorrer-europa.jpg);
 }
 
 .subtitulo {
@@ -761,7 +802,7 @@ p {
 /******************************/
 
 @media (max-width: 576px) {
-    #formPasajes {
+    #parametros_busqueda_servicios_home {
         margin-top: 50px;
     }
     #navbar i {
@@ -777,12 +818,12 @@ p {
         text-align: center;
         font-size: 2rem;
     }
-    #footer,
-    #footer p,
+    #contacto,
+    #contacto p,
     #servicios h3 {
         text-align: center;
     }
-    #footer .contacto h3 {
+    #contacto .contacto h3 {
         font-size: 1.5rem !important;
     }
     #copy p {
@@ -801,7 +842,7 @@ p {
 
 .loader {
     background-color: #eee;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 100;
@@ -822,7 +863,7 @@ p {
     border: 4px solid var(--naranja);
     opacity: 1;
     border-radius: 50%;
-    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation: lds-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .lds-ripple div:nth-child(2) {
