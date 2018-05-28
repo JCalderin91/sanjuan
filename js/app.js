@@ -1,4 +1,5 @@
-$(document).ready(function (ev) {$('.loader').fadeOut(600);
+$(document).ready(function (ev) {
+    $('.loader').fadeOut(600);
 });
 
 $(document).on('scroll', function () {
