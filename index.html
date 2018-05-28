@@ -53,7 +53,7 @@
                      <a data-ancla="" class="ancla nav-link" href="#">Club recorrido</a>
                   </li>
                   <li class="nav-item">
-                     <a data-ancla="" class="ancla nav-link" href="#">Vip</a>
+                     <a href="http://www.vipretiro.com.ar/">Vip</a>
                   </li>
                   <li class="nav-item">
                      <a data-ancla="pagos" class="ancla nav-link" href="#">Medio pago</a>
@@ -62,7 +62,7 @@
                      <a data-ancla="" class="ancla nav-link" href="#">Promociones</a>
                   </li>
                   <li class="nav-item">
-                     <a data-ancla="" class="ancla nav-link" href="#">Contacto</a>
+                     <a data-ancla="contacto" class="ancla nav-link" href="#">Contacto</a>
                   </li>
                </ul>
             </div>
@@ -78,7 +78,51 @@
          <div id="rowHeader" class="row">
             <div class="col-12  col-md-4">
 
-               <form action="" id="formPasajes">
+<form action="https://atsj.centraldepasajes.com.ar/empresa.aspx" method="get" id="parametros_busqueda_servicios_home" target="_blank">
+   <div>
+      <input id="radioIda" type="radio" name="tviaje" value="rIda" checked="checked" class="inputIdayVuelta">
+      <label class="labelIda"> Ida </label>
+      <input id="radioVuelta" type="radio" name="tviaje" value="rVuelta" class="inputIdayVuelta">
+      <label class="labelIdayVuelta"> Ida y Vuelta</label>
+   </div>
+   <div>
+      <label for="Origen">Ciudad de Origen</label>
+      <input id="Origen" size="20" class="text ui-autocomplete-input" type="text" tabindex="1" name="textfield" autocomplete="off"
+         role="textbox" aria-autocomplete="list" aria-haspopup="true" />
+      <input id="IdOrigen" type="hidden" value="" name="IdOrigen" />
+   </div>
+   <div>
+      <label for="Destino">Ciudad de Destino</label>
+      <input id="Destino" size="20" class="text ui-autocomplete-input" type="text" tabindex="2" name="textfield" autocomplete="off"
+         role="textbox" aria-autocomplete="list" aria-haspopup="true" />
+      <input id="IdDestino" type="hidden" value="" name="IdDestino" />
+   </div>
+   <div class="medio">
+      <div class="row">
+         <div class="salida col-6">
+               <h6>Salida</h6>
+               <input class="datepicker salidaInput" name="FechaIda" type="text" readonly="">
+               <i class="iconDate far fa-calendar"></i>
+         </div>
+         <div class="vuelta col-6">
+            <h6>Regreso</h6>
+            <input class="inputFecha regresoInput datepicker" id="datepicker-vuelta" name="FechaVta" type="text" readonly="">
+            <i class="iconDate far fa-calendar"></i>
+         </div>
+      </div>
+      <div>
+         <input type="hidden" name="Token" value="ECgknrzqgIWRKx5rWdrFIcjBLNUVUYK6" />
+      </div>
+   </div>
+   <div style="clear: both;">
+      <div>
+         <input type="submit" value="Buscar" id="btnPasajes" class="lvn-buscar button" />
+      </div>
+   </div>
+</form>
+
+
+<!--           <form action="https://atsj.centraldepasajes.com.ar/empresa.aspx" method="get" id="parametros_busqueda_servicios_home" target="_blank">
                   <div class="row">
                      <div class="col-12">
                         <h4>Buscá tu pasaje</h4>
@@ -86,41 +130,40 @@
 
                      <div class="col-12">
                         <h6>Origen</h6>
-                        <input id="Origen" class="text ui-autocomplete-input" type="text" name="textfield" autocomplete="off" role="textbox" aria-autocomplete="list"
-                           aria-haspopup="true" placeholder="De donde viene?">
+                        <input id="Origen" class="text ui-autocomplete-input" value="" type="text" name="textfield" autocomplete="off" role="textbox"
+                           aria-autocomplete="list" aria-haspopup="true" placeholder="De donde viene?">
                         <h6>Destino</h6>
-                        <input id="Destino" class="text ui-autocomplete-input" type="text" name="textfield" autocomplete="off" role="textbox" aria-autocomplete="list"
-                           aria-haspopup="true" placeholder="Hacia donde va?">
+                        <input id="Destino" class="text ui-autocomplete-input" value="" type="text" name="textfield" autocomplete="off" role="textbox"
+                           aria-autocomplete="list" aria-haspopup="true" placeholder="Hacia donde va?">
                      </div>
 
                      <div class="col-12 tipo">
-                        <h6>
-                           <input id="radioIda" type="radio" name="optradio"> Ida</h6>
-                        <h6>
-                           <input id="radioVuelta" type="radio" name="optradio"> Ida y vuelta</h6>
+                        <h6><input id="radioIda" type="radio" value="rIda" name="tviaje"> Ida</h6>
+                        <h6><input id="radioVuelta" type="radio" value="rVuelta" name="tviaje"> Ida y vuelta</h6>
                      </div>
 
                      <div class="col-6">
                         <h6>Salida</h6>
-                        <input class="salidaInput datepicker" type="text" readonly="">
+                        <input class="salidaInput datepicker" name="FechaIda" type="text" readonly="">
                         <i class="iconDate far fa-calendar"></i>
                      </div>
                      <div class="vuelta col-6">
                         <h6>Regreso</h6>
-                        <input class="regresoInput datepicker" type="text" readonly="">
+                        <input class="regresoInput datepicker" name="fechaVta" type="text" readonly="">
                         <i class="iconDate far fa-calendar"></i>
                      </div>
 
                      <div class="col-6 offset-3">
-                        <a href="#" class="btn" id="btnPasajes">Buscar</a>
+                        <input type="hidden" name="Token" value="ECgknrzqgIWRKx5rWdrFIcjBLNUVUYK6" />
+                        <button type="submit" class="btn" id="btnPasajes">Buscar</button>
                      </div>
                   </div>
-               </form>
+               </form> -->
                <div id="informacion">
                   <h5>¿PREFERÍS COMPRAR POR TELÉFONO?</h5>
                   <a href="#">
                      <h4>
-                        <i class="fas fa-phone "></i> 0810 222 5202</h4>
+                        <i class="fas fa-phone "></i> 0810 222 5207</h4>
                   </a>
                   <a href="#">
                      <h4>
@@ -331,10 +374,95 @@
       </div>
    </div>
    <br>
+   <br>
+   <div id="destinos" class="container-fluid subtitulo">
+      <h2>Nuestros destinos</h2>
+   </div>
+   <br>
+   <div class="container">
+      <!--/******************Carrusel*************************/-->
+      <div id="carruselDestinos" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="row">
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item ">
+               <div class="row">
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                     <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                        height="500">
+                     <div class="carousel-caption">
+                        <h3>Texto de ejemplo</h3>
+                        <a href="#">ver más</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/******************Carrusel*************************/-->
+   </div>
 
 
    <br>
-   <footer id="footer">
+   <footer id="contacto">
       <h2>Para mayor información</h2>
       <br>
       <div class="container">
@@ -350,18 +478,7 @@
                <p>+40 762 321 762</p>
                <p>Mon - Fri, 8:00-22:00</p>
                <h4>Redes sociales</h4>
-               <a href="#">
-                  <i class="fab fa-facebook"></i>
-               </a>
-               <a href="#">
-                  <i class="fab fa-twitter-square"></i>
-               </a>
-               <a href="#">
-                  <i class="fab fa-instagram"></i>
-               </a>
-               <a href="#">
-                  <i class="fab fa-whatsapp-square  "></i>
-               </a>
+
             </div>
             <div class="col-12 col-sm-6">
                <form action="" id="form" method="POST">
@@ -394,14 +511,43 @@
    </footer>
 
    <div id="copy">
-      <div class="row">
-         <div class="col-12 col-sm-6">
-            <p>
-               <a href="#">Autotransportes San Juan &copy; 2018</a>
-            </p>
-         </div>
-         <div class="col-12 col-sm-6">
-            <p>Todos los derechos reservados. </p>
+      <div class="container">
+
+         <div class="row">
+            <div class="col-12">
+               <div class="row">
+                  <div id="iconRedes" class="col-12 col-sm-6">
+                     <a href="https://www.facebook.com/ATSJViajes/">
+                        <i class="fab fa-facebook"></i>
+                     </a>
+                     <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                     </a>
+                     <a href="#">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#">
+                        <i class="fab fa-whatsapp-square  "></i>
+                     </a>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                     <div id="imgLogos" class="row">
+                        <div class="col-2">
+                           <img src="img/footer-pdp.png" alt="">
+                        </div>
+                        <div class="col-2">
+                           <img src="img/footer-fiscal.jpg" alt="">
+                        </div>
+                        <div class="col-2">
+                           <img src="img/cnrt.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12">
+               <p id="copiright">Autotransportes San Juan &copy; 2018 - Todos los derechos reservados. </p>
+            </div>
          </div>
       </div>
    </div>
@@ -427,22 +573,6 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-<script type="text/javascript">
-   Shadowbox.init();
-   window.onload = function () {
-      var content =
-         "<a href='http://www.clubrecorrer.com.ar'><img style='width: 600px; height: 482px;' src='http://aws.clubrecorrer.com.ar/img/recorrer-invitacion-suscripcion.jpg' /></a>";
-      Shadowbox.open({
-         content: content,
-         player: 'html',
-         displayNav: false,
-         title: "Club Recorrer",
-         width: 600,
-         height: 482
-      });
-
-   };
-</script>
 <script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/paradas2.js"></script>
 <script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.aiv_autocomplete.js"></script>
 <script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/carrito/formulariobusqueda.js"></script>
