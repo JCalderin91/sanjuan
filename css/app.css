@@ -1,1 +1,893 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);#header,#nav li a{position:relative}#btn-mas,#header #imgHeader,#navbar li a:after{left:50%;transform:translateX(-50%)}#btnPasajes,#contacto #form input,#contacto #form textarea,#contacto a,#form button,#form button i,#nav li a,#navbar{transition:all .5s ease}#contacto #form h4,#contacto h2,#form button,#informacion,#nav li a{text-align:center}#carrusel p,#copy,#copy p{text-align:center!important}.container-fluid{margin:0!important;padding:0!important}:root{--color:#5c6b80;--naranja:rgb(232, 83, 12)}*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:"PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--color)}body{background-color:#eee}#navbar img{width:130px;height:auto}.scrollOff{background-color:#444!important;box-shadow:0 5px 10px rgba(0,0,0,.5)}.scrollOff li a{color:#fff!important}.scrollOn{background-color:#fff!important}#btnPasajes,#carruselDestinos a,#contacto #form h4,#form button:hover,#navbar li a:after{background-color:var(--naranja)}.scrollOn li a{color:var(--color)!important}#nav ul{width:100%;display:flex;justify-content:flex-end;align-items:center}#nav .logo{height:2rem}#navbar li a:after{content:"";position:absolute;bottom:0;width:0%;height:3px;transition:all .3s ease}#navbar li a:hover:after{width:100%}#nav ul li a:hover{color:var(--naranja)!important}#header{min-height:100vh;height:auto;width:100vw;background-color:#999;display:flex;align-items:center;overflow:hidden}#header #checks .boxChecks{display:inline-block!important;padding-left:30px!important}#header #checks{display:flex;justify-content:space-between}#header #imgHeader{position:absolute;min-width:100%;width:auto;height:100%}#tipoViajeCheck{display:flex;justify-content:space-around;align-items:center}#parametros_busqueda_servicios_home input[type=text]{width:100%;border-radius:0;border:1px solid rgba(0,0,0,.2);padding:3px;transition:all .5s ease}#parametros_busqueda_servicios_home input[type=text]:focus{border-bottom:2px solid var(--naranja);background-color:rgba(0,0,0,.08)}#parametros_busqueda_servicios_home{width:100%;background-color:rgba(255,255,255,.8);padding:20px;text-shadow:2px 2px 3px rgba(255,255,255,.699);text-transform:uppercase}#parametros_busqueda_servicios_home a i{font-size:2rem;color:var(--color)}#header .iconDate.far.fa-calendar{color:var(--naranja)!important;filter:opacity(.5)}#btn-mas a i,#btnPasajes,#carruselDestinos a{color:#fff!important}#contacto .contacto,#contacto h2,#contacto i,#form button,#form button i{color:var(--naranja)}#parametros_busqueda_servicios_home h4{text-align:center;font-size:1.35rem}#parametros_busqueda_servicios_home h6{margin-top:5px;font-family:Roboto,sans-serif!important;margin-bottom:2px;font-weight:700;font-size:.83rem}#parametros_busqueda_servicios_home .tipo h6{font-size:.8rem;display:inline-block;font-weight:400}#btnPasajes{margin-top:10px;padding:5px 10px;width:100%;border-radius:0;text-shadow:none}#btnPasajes:hover{cursor:pointer}#parametros_busqueda_servicios_home i{position:absolute;bottom:0;right:25px;transform:translateY(-50%);font-size:1rem}#informacion{padding:10px 20px;width:100%;background-color:rgba(0,0,0,.8);color:#fff}#informacion i{color:#fff}#informacion h5{font-size:.8rem}#informacion a h4,#informacion a h4 i{font-size:1rem;color:#fff;transition:all .4s ease}#informacion a{text-decoration:none}#informacion a h4:hover{text-decoration:none;color:var(--naranja)}#carrusel img{width:100%;height:auto}#rowHeader{display:flex;align-items:center;margin:80px auto 50px}#btn-mas{position:absolute;top:90%;animation:jump 2.5s ease infinite}@keyframes jump{0%,100%{top:92%}50%{top:90%}}#btn-mas i{font-size:2rem;text-shadow:0 -2px 5px rgba(0,0,0,.4)}#carruselDestinos img{width:100%;height:auto;font-size:.8rem}#carruselDestinos h3{color:var(--color);text-shadow:1px 1px 2px #fff;margin:10px 0}#carruselDestinos a{padding:10px 20px}#carruselDestinos .row div[class^=col-]{margin-top:5px}#body img{width:100%;height:100%}#body .box{position:absolute;top:50%;transform:translate(0,-50%)}#contacto h5 i{font-size:100%}#contacto{padding:20px 0;color:#fff}#contacto ul li{list-style:none}#contacto li input{width:100%;border:1px solid #fff;padding:5px;border-radius:5px 5px 0 0}#contacto li a{width:100%;color:#fff;border:1px solid #fff;border-radius:0 0 5px 5px}#form button,#form button:hover{border:1px solid var(--naranja)}#contacto a{position:relative}#contacto p{color:#fff;font-family:1.5rem;margin-bottom:0}#contacto i{font-size:2rem;padding:0 5px}#form button{width:100%;background-color:transparent}#form button i{font-size:100%}#form button:hover,#form button:hover i{color:#fff}#contacto #form{background-color:#eee;padding:0 10px;border-radius:10px}#contacto #form input,#contacto #form textarea{border:none;border-bottom:1px solid rgba(0,0,0,.2);width:100%;min-width:100%;padding:3px;margin:3px;background-color:#fff}#contacto #form textarea{min-height:50px;max-height:100px}#contacto #form input:focus,#contacto #form textarea:focus{background-color:#fff}#contacto #form h4{font-weight:700;color:#fff;padding:20px;top:-20px;border-radius:5px;box-shadow:0 5px 15px rgba(0,0,0,.4);margin-bottom:30px}#contacto .contacto{text-shadow:1px 1px 2px var(--color)}#contacto h2{text-shadow:1px 1px 3px #fff;font-weight:700;padding:20px}#contacto .contacto h3{font-weight:700;font-size:2rem;text-shadow:1px 1px 3px #000}#contacto #form a{margin-top:15px}#contacto #form .row{padding:10px}#checks .boxChecks{display:block;position:relative;padding-left:35px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:1rem}#checks .boxChecks input{position:absolute;opacity:0;cursor:pointer}#checks .checkmark{position:absolute;top:0;left:0;height:25px;width:25px;background-color:#eee;border:1px solid rgba(255,121,59,3);border-radius:5px}#checks .boxChecks:hover input~.checkmark{background-color:#ccc}#checks .boxChecks input:checked~.checkmark{background-color:var(--naranja)}#checks .checkmark:after{content:"";position:absolute;display:none}#checks .boxChecks input:checked~.checkmark:after{display:block}#checks .boxChecks .checkmark:after{left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}a{color:var(--naranja)!important;text-decoration:none!important}#imgLogos{display:flex;justify-content:flex-end}#imgLogos img{width:2.5rem;height:2.5rem;margin:5px}#imgLogos div[class=col-2]{background-color:#fff;margin:10px 0}#copy{background-color:#fff}#copy p{padding:10px;font-size:.8rem;color:var(--color);margin-bottom:0!important}#pagos p,.subtitulo h2{text-align:center}:-webkit-selection{background:var(--naranja)!important;color:#000!important}::-moz-selection{background:var(--naranja)!important;color:#000!important}::selection{background:var(--naranja)!important;color:#000!important}.empresa-banner,.subtitulo{background-repeat:no-repeat}#contacto,.empresa-banner,.subtitulo{background-size:cover;background-attachment:fixed}#contacto{background-color:#444}#iconRedes{display:flex;justify-content:flex-start}#iconRedes .fab{font-size:2.5rem;color:var(--color);transition:all .2s ease;padding:10px}#iconRedes .fab.fa-facebook:hover{color:#4867aa!important}#iconRedes .fab.fa-twitter-square:hover{color:#00aced!important}#iconRedes .fab.fa-instagram:hover{color:#c34d8a!important}#iconRedes .fab.fa-whatsapp-square:hover{color:#47c756!important}#btn-arriba,#btn-arriba i,.subtitulo h2{color:var(--naranja)}.empresa-banner{width:100vw;height:300px;background-image:url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png)}.empresa-banner .row{height:100%;display:flex;justify-content:center;align-items:center;text-align:center}#pagos .subtitulo{background-image:url(http://www.quimasa.com/wp-content/uploads/2018/03/servicios.jpg)}#pagos img{width:100%}#pagos .row{display:flex;align-items:flex-end}#flota .subtitulo{background-image:url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg)}#destinos{background-image:url(https://www.tapps.net/wp-content/uploads/2017/06/recorrer-europa.jpg)}.subtitulo{position:relative;margin-bottom:30px;width:100vw;height:200px}.subtitulo h2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2.5rem;text-shadow:0 2px 3px rgba(0,0,0,.6)}p{text-align:justify}#btn-arriba{display:none;position:fixed;bottom:20px;right:20px;font-size:2.5rem}#carousel img{width:100%}@media (max-width:576px){#contacto,#contacto p,#servicios h3,.subtitulo h2{text-align:center}#parametros_busqueda_servicios_home{margin-top:50px}#navbar i{color:var(--naranja)}#header .cont-header{width:100vw}#header .cont-subtitulo{display:none}.subtitulo h2{font-size:2rem}#contacto .contacto h3{font-size:1.5rem!important}#copy p{padding:10px;margin:0}ul.ui-autocomplete{left:0!important;width:100vw!important;padding:0 2px!important}ul.ui-widget-content a{color:var(--color)!important}a#ui-active-menuitem,a.ui-state-hover{color:var(--naranja)!important}a.ui-state-hover{border:none!important}#iconRedes,#imgLogos{justify-content:center}}@media (max-width:768px){#btn-mas{display:none}}.loader{background-color:#eee;position:fixed;width:100vw;height:100vh;z-index:100;display:flex;justify-content:center;align-items:center}input,input[type=text]{background-color:#f1f1f1}.lds-ripple{display:inline-block;position:relative;width:64px;height:64px}.lds-ripple div{position:absolute;border:4px solid var(--naranja);opacity:1;border-radius:50%;animation:lds-ripple 2s cubic-bezier(0,.2,.8,1) infinite}.lds-ripple div:nth-child(2){animation-delay:-.5s}@keyframes lds-ripple{0%{top:28px;left:28px;width:0;height:0;opacity:1}100%{top:-1px;left:-1px;width:58px;height:58px;opacity:0}}.autocomplete{position:relative;display:inline-block}input{border:1px solid transparent;padding:10px;font-size:16px}input[type=text]{width:100%}input[type=submit]{background-color:var(--naranja);color:#fff;cursor:pointer}.autocomplete-items{position:absolute;border:1px solid #d4d4d4;border-bottom:none;border-top:none;z-index:99;top:100%;left:0;right:0}.autocomplete-items div{padding:10px;cursor:pointer;background-color:#fff;border-bottom:1px solid #d4d4d4}.autocomplete-items div:hover{background-color:#e9e9e9}.autocomplete-active{background-color:var(--naranja)!important;color:#fff}ul.ui-autocomplete{width:auto!important;padding:0 2px!important}ul.ui-widget-content a{color:var(--color)!important}a#ui-active-menuitem,a.ui-state-hover{color:var(--naranja)!important}a.ui-state-hover{border:none!important}
+/*rgb(255, 165, 0) var(--naranja)**/
+
+/*
+[class^='col-']{
+	border: 1px solid red;
+}
+.row{
+	border: 1px solid blue;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+:root {
+    --color: #5c6b80;
+    --naranja: rgb(232, 83, 12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--color);
+}
+
+body {
+    background-color: #eee;
+}
+
+#navbar {
+    transition: all .5s ease;
+}
+
+#navbar img {
+    width: 130px;
+    height: auto;
+}
+
+.scrollOff {
+    background-color: #444 !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.scrollOff li a {
+    color: #fff !important;
+}
+
+.scrollOn {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.scrollOn li a {
+    color: var(--color) !important;
+}
+
+#nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#nav .logo {
+    height: 2rem;
+}
+
+#nav li a {
+    text-align: center;
+    transition: all .5s ease;
+    position: relative;
+}
+
+#navbar li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: var(--naranja);
+    transition: all .3s ease;
+}
+
+#navbar li a:hover:after {
+    width: 100%;
+}
+
+#nav ul li a:hover {
+    color: var(--naranja) !important;
+}
+
+/****************************************************************************************************/
+
+#header {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#header #checks .boxChecks{
+    display: inline-block !important;
+}
+
+#header #checks{
+    display: flex;
+    justify-content: space-between;
+}
+#header #checks .boxChecks{
+    padding-left: 30px !important;
+}
+#header #imgHeader {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+#tipoViajeCheck{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#parametros_busqueda_servicios_home input[type="text"] {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    transition: all .5s ease;
+}
+
+#parametros_busqueda_servicios_home input[type="text"]:focus {
+    border-bottom: 2px solid var(--naranja);
+    background-color: rgba(0, 0, 0, .08);
+}
+
+#parametros_busqueda_servicios_home {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 20px;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.699);
+    text-transform: uppercase;
+}
+
+#parametros_busqueda_servicios_home a i {
+    font-size: 2rem;
+    color: var(--color);
+}
+#header .iconDate.far.fa-calendar{
+    color: var(--naranja) !important;
+    filter: opacity(.5);
+}
+
+#parametros_busqueda_servicios_home h4 {
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+#parametros_busqueda_servicios_home h6 {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif !important;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 0.83rem;
+}
+
+#parametros_busqueda_servicios_home .tipo h6 {
+    font-size: .8rem;
+    display: inline-block;
+    font-weight: normal;
+}
+
+#btnPasajes {
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 0;
+    background-color: var(--naranja);
+    color: #fff !important;
+    transition: all .5s ease;
+    text-shadow: none;
+}
+
+#btnPasajes:hover {
+    cursor: pointer;
+}
+
+#parametros_busqueda_servicios_home i {
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+/*************************************/
+
+#informacion {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+}
+
+#informacion i {
+    color: #fff;
+}
+
+#informacion h5 {
+    font-size: .8rem;
+}
+
+#informacion a h4,
+#informacion a h4 i {
+    font-size: 1rem;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+#informacion a {
+    text-decoration: none;
+}
+
+#informacion a h4:hover {
+    text-decoration: none;
+    color: var(--naranja);
+}
+
+/****************************************************************************************************/
+
+#carrusel img {
+    width: 100%;
+    height: auto;
+}
+
+#carrusel p {
+    text-align: center !important;
+}
+
+/****************************************************************************************************/
+
+#rowHeader {
+    display: flex;
+    align-items: center;
+    margin: 80px auto 50px auto;
+}
+
+/****************************************************************************************************/
+
+#btn-mas {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: jump 2.5s ease infinite;
+}
+
+#btn-mas a i {
+    color: #fff !important;
+}
+
+@keyframes jump {
+    0% {
+        top: 92%;
+    }
+    50% {
+        top: 90%;
+    }
+    100% {
+        top: 92%;
+    }
+}
+
+#btn-mas i {
+    font-size: 2rem;
+    text-shadow: 0px -2px 5px rgba(0, 0, 0, .4);
+}
+
+#carruselDestinos img {
+    width: 100%;
+    height: auto;
+    font-size: .8rem;
+}
+
+#carruselDestinos h3 {
+    color: var(--color);
+    text-shadow: 1px 1px 2px #fff;
+    margin: 10px 0;
+}
+
+#carruselDestinos a {
+    padding: 10px 20px;
+    background-color: var(--naranja);
+    color: #fff !important;
+}
+#carruselDestinos .row div[class^='col-']{
+    margin-top: 5px;
+}
+
+#body img {
+    width: 100%;
+    height: 100%;
+}
+
+#body .box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#contacto h5 i {
+    font-size: 100%;
+}
+
+#contacto {
+    padding: 20px 0;
+    background-color: #131627;
+    color: #fff;
+
+}
+
+#contacto ul li {
+    list-style: none;
+}
+
+#contacto li input {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+#contacto li a {
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+#contacto a {
+    position: relative;
+    transition: all .5s ease;
+}
+
+#contacto p {
+    color: #fff;
+    font-family: 1.5rem;
+    margin-bottom: 0;
+}
+
+#contacto i {
+    color: var(--naranja);
+    font-size: 2rem;
+    padding: 0 5px;
+}
+
+#form button {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: var(--naranja);
+    border: 1px solid var(--naranja);
+    transition: all .5s ease;
+}
+#form button i{
+    color: var(--naranja);
+    transition: all .5s ease;
+}
+#form button:hover {
+    background-color: var(--naranja);
+    color: #fff;
+    border: 1px solid var(--naranja);
+}
+
+#form button:hover i {
+    color: #fff;
+}
+
+#form button i {
+    font-size: 100%;
+}
+
+#contacto #form {
+    background-color: #eee;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+#contacto #form textarea,
+#contacto #form input {
+    transition: all .5s ease;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    min-width: 100%;
+    padding: 3px;
+    margin: 3px;
+    background-color: #fff;
+}
+
+#contacto #form textarea {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+#contacto #form input:focus,
+#contacto #form textarea:focus {
+    background-color: #fff;
+}
+
+#contacto #form h4 {
+    background-color: var(--naranja);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    top: -20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+    margin-bottom: 30px;
+}
+
+#contacto .contacto {
+    color: var(--naranja);
+    text-shadow: 1px 1px 2px var(--color);
+}
+
+#contacto h2 {
+    text-align: center;
+    color: var(--naranja);
+    text-shadow: 1px 1px 3px #fff;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#contacto .contacto h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #000;
+}
+
+
+#contacto #form a {
+    margin-top: 15px;
+}
+
+#contacto #form .row {
+    padding: 10px;
+}
+
+#checks .boxChecks {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+}
+
+#checks .boxChecks input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#checks .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid rgba(255, 121, 59, 3);
+    border-radius: 5px;
+}
+
+/* Cuando el cursor este encima se le aplica el color gris */
+
+#checks .boxChecks:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/*Cuando es seleccionado se le coloca el color naranja */
+
+#checks .boxChecks input:checked~.checkmark {
+    background-color: var(--naranja);
+}
+
+/* Se crea el indicador */
+
+#checks .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* y s muestra al ser seleccionado */
+
+#checks .boxChecks input:checked~.checkmark:after {
+    display: block;
+}
+
+#checks .boxChecks .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a {
+    color: var(--naranja) !important;
+    text-decoration: none !important;
+}
+
+#imgLogos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#imgLogos img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 5px;
+}
+
+#imgLogos div[class='col-2'] {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+#copy {
+    background-color: #fff;
+    text-align: center !important;
+}
+
+#copy p {
+    padding: 10px;
+    font-size: .8rem;
+    color: var(--color);
+    margin-bottom: 0px !important;
+    text-align: center !important;
+}
+
+
+*:-webkit-selection {
+    background: var(--naranja) !important;
+    color: black !important;
+}
+
+*::-moz-selection {
+    background: var(--naranja) !important;
+    color: black !important;
+}
+
+*::selection {
+    background: var(--naranja) !important;
+    color: black !important;
+}
+
+#contacto {
+    /*background-image: url(https://i.ytimg.com/vi/dGiUO62LG1g/maxresdefault.jpg);
+    background-repeat: no-repeat;
+     Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
+    background-color: #444;
+}
+
+#iconRedes {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#iconRedes .fab {
+    font-size: 2.5rem;
+    color: var(--color);
+    transition: all .2s ease;
+    padding: 10px 10px;
+}
+
+#iconRedes .fab.fa-facebook:hover {
+    color: #4867aa !important;
+}
+
+#iconRedes .fab.fa-twitter-square:hover {
+    color: #00aced !important;
+}
+
+#iconRedes .fab.fa-instagram:hover {
+    color: #c34d8a !important;
+}
+
+#iconRedes .fab.fa-whatsapp-square:hover {
+    color: #47c756 !important;
+}
+
+.empresa-banner {
+    width: 100vw;
+    height: 300px;
+    background-image: url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png);
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
+}
+
+.empresa-banner .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pagos .subtitulo {
+    background-image: url(http://www.quimasa.com/wp-content/uploads/2018/03/servicios.jpg);
+}
+
+#pagos img {
+    width: 100%;
+    /*     height: 100%; */
+}
+
+#pagos p {
+    text-align: center;
+}
+
+#pagos .row {
+    display: flex;
+    align-items: flex-end;
+}
+
+#flota .subtitulo {
+    background-image: url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg);
+}
+
+#destinos {
+    background-image: url(https://www.tapps.net/wp-content/uploads/2017/06/recorrer-europa.jpg);
+}
+
+.subtitulo {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100vw;
+    height: 200px;
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
+}
+
+.subtitulo h2 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--naranja);
+    font-size: 2.5rem;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+}
+
+p {
+    text-align: justify;
+}
+
+#btn-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: var(--naranja);
+}
+
+#btn-arriba i {
+    color: var(--naranja);
+}
+
+#carousel img {
+    width: 100%;
+}
+
+/******************************/
+
+@media (max-width: 576px) {
+    #parametros_busqueda_servicios_home {
+        margin-top: 50px;
+    }
+    #navbar i {
+        color: var(--naranja)
+    }
+    #header .cont-header {
+        width: 100vw;
+    }
+    #header .cont-subtitulo {
+        display: none;
+    }
+    .subtitulo h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    #contacto,
+    #contacto p,
+    #servicios h3 {
+        text-align: center;
+    }
+    #contacto .contacto h3 {
+        font-size: 1.5rem !important;
+    }
+    #copy p {
+        padding: 10px;
+        margin: 0;
+    }
+    ul.ui-autocomplete {
+        left: 0px !important;
+        width: 100vw !important;
+        padding: 0 2px !important;
+    }
+
+    ul.ui-widget-content a {
+        color: var(--color) !important;
+    }
+
+    a#ui-active-menuitem {
+        color: var(--naranja) !important;
+    }
+
+    a.ui-state-hover {
+        color: var(--naranja) !important;
+        border: none !important;
+    }
+    #imgLogos, 
+    #iconRedes{
+        justify-content: center;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    #btn-mas {
+        display: none;
+    }
+}
+
+/***********Loader*********/
+
+.loader {
+    background-color: #eee;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid var(--naranja);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+
+/***********Loader*********/
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: var(--naranja);
+    color: #fff;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: var(--naranja) !important;
+    color: #ffffff;
+}
+ul.ui-autocomplete{
+    width: auto !important;
+    padding: 0 2px !important;
+}
+ul.ui-widget-content a {
+    color: var(--color) !important;
+}
+a#ui-active-menuitem{
+    color: var(--naranja) !important;
+}
+a.ui-state-hover{
+    color: var(--naranja) !important;
+    border: none !important;
+}
