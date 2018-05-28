@@ -17,7 +17,646 @@
    <!--Loader-->
    <div class="loader">
       <div class="lds-ripple">
-         <div></div>
+         <div></div><!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>San Juan</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body>
+  <!--Loader-->
+  <div class="loader">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--Loader-->
+  <div id="nav" class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrollOn">
+      <div class="container">
+
+        <!-- Logo -->
+        <img class="logo" src="img/logo-sin-fondo.png">
+
+        <!-- Botoón visible en modo responsive -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a data-ancla="header" class="ancla nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a data-ancla="flota" class="ancla nav-link" href="#">Flota</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://servicesbus.com.ar:5000/pedido/index/247A3F127FECA9C415C2DFA70559FE">Viajes especiales</a>
+            </li>
+            <li class="nav-item">
+              <a data-ancla="" class="ancla nav-link" href="#">Encomiendas</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://www.clubrecorrer.com.ar/" class="nav-link">Club recorrer</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://www.vipretiro.com.ar/" class="nav-link">Vip</a>
+            </li>
+            <li class="nav-item">
+              <a data-ancla="pagos" class="ancla nav-link" href="#">Medio pago</a>
+            </li>
+            <li class="nav-item">
+              <a data-ancla="" class="ancla nav-link" href="#">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a data-ancla="contacto" class="ancla nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header id="header">
+
+    <img id="imgHeader" class="img-flud" src="img/DSC0006-01.jpeg" alt="">
+
+    <div class="container">
+      <div id="rowHeader" class="row">
+        <div class="col-12  col-md-4">
+
+          <form action="https://atsj.centraldepasajes.com.ar/empresa.aspx" method="get" id="parametros_busqueda_servicios_home" target="_blank">
+
+
+
+
+            <div class="col-12">
+                <div id="checks">
+                  <label class="boxChecks">Ida
+                    <input type="radio" id="radioIda" name="tviaje" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="boxChecks">Ida y Vuelta
+                    <input type="radio" id="radioVuelta" name="tviaje">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+<!--             <div id="tipoViajeCheck">
+              <div>
+                <input id="radioIda" type="radio" name="tviaje" value="rIda" checked="checked" class="inputIdayVuelta">
+                <label class="labelIda"> Ida </label>                
+              </div>
+              <div>
+                <input id="radioVuelta" type="radio" name="tviaje" value="rVuelta" class="inputIdayVuelta">
+                <label class="labelIdayVuelta"> Ida y Vuelta</label>
+              </div>
+            </div> -->
+
+            <div>
+              <label for="Origen">Ciudad de Origen</label>
+              <input id="Origen" size="20" class="text ui-autocomplete-input" type="text" tabindex="1" name="textfield" autocomplete="off"
+                role="textbox" aria-autocomplete="list" aria-haspopup="true" />
+              <input id="IdOrigen" type="hidden" value="" name="IdOrigen" />
+            </div>
+            <div>
+              <label for="Destino">Ciudad de Destino</label>
+              <input id="Destino" size="20" class="text ui-autocomplete-input" type="text" tabindex="2" name="textfield" autocomplete="off"
+                role="textbox" aria-autocomplete="list" aria-haspopup="true" />
+              <input id="IdDestino" type="hidden" value="" name="IdDestino" />
+            </div>
+            <div class="medio">
+              <div class="row">
+                <div class="salida col-6">
+                  <h6>Salida</h6>
+                  <input class="datepicker salidaInput" name="FechaIda" type="text" readonly="">
+                  <i class="iconDate far fa-calendar"></i>
+                </div>
+                <div class="vuelta col-6">
+                  <h6>Regreso</h6>
+                  <input class="inputFecha regresoInput datepicker" id="datepicker-vuelta" name="FechaVta" type="text" readonly="">
+                  <i class="iconDate far fa-calendar"></i>
+                </div>
+              </div>
+              <div>
+                <input type="hidden" name="Token" value="ECgknrzqgIWRKx5rWdrFIcjBLNUVUYK6" />
+              </div>
+            </div>
+            <div style="clear: both;">
+              <div>
+                <input type="submit" value="Buscar" id="btnPasajes" class="lvn-buscar button" />
+              </div>
+            </div>
+          </form>
+
+
+          <!--           <form action="https://atsj.centraldepasajes.com.ar/empresa.aspx" method="get" id="parametros_busqueda_servicios_home" target="_blank">
+                  <div class="row">
+                     <div class="col-12">
+                        <h4>Buscá tu pasaje</h4>
+                     </div>
+
+                     <div class="col-12">
+                        <h6>Origen</h6>
+                        <input id="Origen" class="text ui-autocomplete-input" value="" type="text" name="textfield" autocomplete="off" role="textbox"
+                           aria-autocomplete="list" aria-haspopup="true" placeholder="De donde viene?">
+                        <h6>Destino</h6>
+                        <input id="Destino" class="text ui-autocomplete-input" value="" type="text" name="textfield" autocomplete="off" role="textbox"
+                           aria-autocomplete="list" aria-haspopup="true" placeholder="Hacia donde va?">
+                     </div>
+
+                     <div class="col-12 tipo">
+                        <h6><input id="radioIda" type="radio" value="rIda" name="tviaje"> Ida</h6>
+                        <h6><input id="radioVuelta" type="radio" value="rVuelta" name="tviaje"> Ida y vuelta</h6>
+                     </div>
+
+                     <div class="col-6">
+                        <h6>Salida</h6>
+                        <input class="salidaInput datepicker" name="FechaIda" type="text" readonly="">
+                        <i class="iconDate far fa-calendar"></i>
+                     </div>
+                     <div class="vuelta col-6">
+                        <h6>Regreso</h6>
+                        <input class="regresoInput datepicker" name="fechaVta" type="text" readonly="">
+                        <i class="iconDate far fa-calendar"></i>
+                     </div>
+
+                     <div class="col-6 offset-3">
+                        <input type="hidden" name="Token" value="ECgknrzqgIWRKx5rWdrFIcjBLNUVUYK6" />
+                        <button type="submit" class="btn" id="btnPasajes">Buscar</button>
+                     </div>
+                  </div>
+               </form> -->
+          <div id="informacion">
+            <h5>¿PREFERÍS COMPRAR POR TELÉFONO?</h5>
+            <a href="#">
+              <h4>
+                <i class="fas fa-phone "></i> 0810 222 5207</h4>
+            </a>
+            <a href="#">
+              <h4>
+                <i class="fas fa-map-marker-alt"></i> DONDE ESTAMOS</h4>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <!--/******************Carrusel*************************/-->
+          <div id="carrusel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+              <li data-target="#carrusel" data-slide-to="1"></li>
+              <li data-target="#carrusel" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="Los Angeles" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>Texto de ejemplo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="Chicago" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>Texto de ejemplo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://biomodel.uah.es/model3/ejemplo.gif" alt="New York" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>Texto de ejemplo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carrusel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          <!--/******************Carrusel*************************/-->
+        </div>
+      </div>
+    </div>
+
+
+    <div id="btn-mas">
+      <a class="ancla" data-ancla="empresa" href="#">
+        <i class="fas fa-arrow-alt-circle-down "></i>
+      </a>
+    </div>
+
+  </header>
+
+  <br>
+
+  <div id="empresa" class="container">
+    <h2>Nuestra empresa</h2>
+    <div class="empresa">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+        ipsum asperiores perfer adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum asperiores
+        perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus quibusdam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+        ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus
+        quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis,
+        ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus
+        quibusdam.
+      </p>
+    </div>
+  </div>
+  <br>
+  <div id="flota">
+
+    <div class="container-fluid subtitulo">
+      <h2>Nuestra flota</h2>
+    </div>
+    <br>
+    <div class="container">
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div id="carousel" class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>Unidades</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                  unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui ratione.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <img src="img/unidades.jpeg">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>Comodidades</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                  unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui ratione.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <img src="img/comodidades.jpeg">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>Personal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque pariatur sint, dolor ipsam doloribus
+                  unde? Distinctio culpa ab beatae, quisquam sunt itaque quia, sit eius reprehenderit, quam qui ratione.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <img src="img/personal.JPG">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="pagos">
+    <div class="container-fluid subtitulo">
+      <h2>Ofrecemos diversos medios de pago</h2>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/05/ICBC.png" alt="">
+          <p>6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/04/supervielle2.png" alt="">
+          <p>3 y 6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2018/04/Provincia.png" alt="">
+          <p>3 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2017/08/dinners.png" alt="">
+          <p>3 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/05/Consumax.jpg" alt="">
+          <p>6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/05/Credicoop.jpg" alt="">
+          <p>2 a 6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/banco-provincia-1.jpg" alt="">
+          <p>3 y 6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Italcred.jpg" alt="">
+          <p>12 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Macro.jpg" alt="">
+          <p>12 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Naranja.jpg" alt="">
+          <p>6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Shopping.jpg" alt="">
+          <p>6 cuotas</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="http://cdn5.nuevachevallier.com/wp-content-test/uploads/2016/04/Visa.jpg" alt="">
+          <p>3 cuotas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="destinos" class="container-fluid subtitulo">
+    <h2>Nuestros destinos</h2>
+  </div>
+  <br>
+  <div class="container">
+    <!--/******************Carrusel*************************/-->
+    <div id="carruselDestinos" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <img src="http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2017/31/playas__2473_650x.jpg" alt="Los Angeles" width="1100"
+                height="500">
+              <div class="carousel-caption">
+                <h3>Texto de ejemplo</h3>
+                <a href="#">ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/******************Carrusel*************************/-->
+  </div>
+
+
+  <br>
+  <footer id="contacto">
+    <h2>Para mayor información</h2>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="contacto col-12 col-sm-6">
+          <h3>Ponte en contacto</h3>
+          <h5>
+            <i class="fas fa-map-marker-alt"></i>Busca nustras oficinas en</h5>
+          <p>San Juan, Argentina</p>
+          <p>Guemes 1440 Sur</p>
+          <h5>
+            <i class="fas fa-phone "></i>Puedes llamarnos</h5>
+          <p>0810 222 5207</p>
+          <p>Lunes a Viernes, 8:00 A.M - 8:00 P.M</p>
+
+        </div>
+        <div class="col-12 col-sm-6">
+          <form action="" id="form" method="POST">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Dinos lo que necesitas</h4>
+              </div>
+              <div class="col-12">
+                <div id="checks">
+                  <label class="boxChecks">Persona Encargada Uno
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="boxChecks">Persona Encargada Dos
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <input type="text" name="nombre" placeholder="Nombre">
+              </div>
+              <div class="col-12 col-sm-6">
+                <input type="text" name="correo" placeholder="Correo">
+              </div>
+              <div class="col-12">
+                <input type="text" name="asunto" placeholder="Asunto">
+              </div>
+              <div class="col-12">
+                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="col-12">
+                <input type="file">
+              </div>
+              <div class="col-12">
+                <button class="btn" type="submit">ENVIAR MENSAJE
+                  <i class="fas fa-location-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="copy">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div id="iconRedes" class="col-12 col-sm-6">
+              <a href="https://www.facebook.com/ATSJViajes/">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-whatsapp-square  "></i>
+              </a>
+            </div>
+            <div id="imgLogos" class="col-12 col-sm-6">
+              
+              <img src="img/footer-pdp.png" alt="">
+              <img src="img/footer-fiscal.jpg" alt="">
+              <img src="img/cnrt.png" alt="">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p id="copiright">Autotransportes San Juan S.A.  2015 - Todos los derechos reservados. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="btn-arriba">
+    <a href="#">
+      <i class="fas fa-arrow-circle-up"></i>
+    </a>
+  </div>
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+
+<!-- ***************************************************** -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/paradas2.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.aiv_autocomplete.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/carrito/formulariobusqueda.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.global.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.glob.es.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.glob.es-AR.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.ui.datepicker-es.js"></script>
+<script type="text/javascript" src="https://www.centraldepasajes.com.ar/cdp/scripts/jquery.ui.datepicker-es-AR.js"></script>
+<script type="text/javascript">
+  $.extend({
+    alert: function (message, title) {
+      $("<div></div>").dialog({
+        buttons: {
+          "Aceptar": function () {
+            $(this).dialog("close");
+          }
+        },
+        open: function (event, ui) {
+          $(".ui-dialog-titlebar-close").hide();
+        },
+        close: function (event, ui) {
+          $(this).remove();
+        },
+        resizable: false,
+        title: title,
+        closeOnEscape: false,
+        draggable: false,
+        width: 250,
+        modal: true
+      }).text(message);
+    }
+  });
+</script>
+
+<script src="js/app.js"></script>
+</html>
          <div></div>
       </div>
    </div>
